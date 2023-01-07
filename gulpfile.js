@@ -71,6 +71,13 @@ function images(done) {
     done();
 }
 
+function htaccess(done) {
+    gulp.src('./src/_html/.htaccess')
+        .pipe(gulp.dest('./dist'));
+
+    done();
+}
+
 function compressImages(done) {
     gulp.src('./src/img/**/*.jpg')
         .pipe(webp())
@@ -101,7 +108,16 @@ function compressFonts(done) {
 }
 
 function getServe(done) {
-    // ...
+    sync.init({
+        server: './dist'
+    });
+
+    gulp.watch('./src/**/*.html', gulp.series(html)).on('change', sync.reload);
+    gulp.watch('./src/_html/.htaccess', gulp.series(htaccess)).on('change', sync.reload);
+    gulp.watch('./src/img/**/*.{jpg,ico,webp,jfif,jpeg,png}', gulp.series(images)).on('change', sync.reload);
+    gulp.watch('./src/css/**/*.css', gulp.series(css)).on('change', sync.reload);
+    gulp.watch('./src/fonts/**/*.{otf,woff,woff2,ttf}', gulp.series(fonts)).on('change', sync.reload);
+    gulp.watch('./src/js/**/*.js', gulp.series(js)).on('change', sync.reload);
 
     done();
 }
