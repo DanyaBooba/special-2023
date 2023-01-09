@@ -4,7 +4,6 @@ var fileinclude = require('gulp-file-include');
 var replace = require('gulp-replace');
 var webpHtmlNoSvg = require('gulp-webp-html-nosvg');
 var cssmin = require('gulp-cssmin');
-// var csso = require('gulp-csso');
 var concatCss = require('gulp-concat-css');
 var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
@@ -24,8 +23,8 @@ function html(done) {
             removeComments: true
         }))
         .pipe(gulp.dest('./dist'))
-        .pipe(gulp.src('./dist/html/.htaccess'))
-        .pipe(gulp.dest('./src'));
+        .pipe(gulp.src('./src/html/.htaccess'))
+        .pipe(gulp.dest('./dist'));
 
     done();
 }
