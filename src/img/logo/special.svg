@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 844 235.56">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #1d1d1b;
+        font-family: Avenir-Roman, Avenir;
+        font-size: 185.25px;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_2-2" data-name="Слой 2">
+    <polygon class="cls-1" points="24.78 195.17 .86 195.17 110.86 .5 204.78 .5 24.78 195.17"/>
+    <text class="cls-2" transform="translate(250.46 161.83)"><tspan x="0" y="0">Special</tspan></text>
+  </g>
+</svg>

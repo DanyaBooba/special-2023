@@ -30,9 +30,12 @@ function html(done) {
 }
 
 function css(done) {
-    gulp.src('./src/css/**/*.css')
+    gulp.src('./src/css/*.css')
         .pipe(autoprefixer())
         .pipe(concatCss('index.css'))
+        .pipe(cssmin())
+        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.src('./src/css/static/**/*.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('./dist/css'));
 
@@ -87,10 +90,10 @@ function browser(done) {
         server: './dist'
     });
 
-    gulp.watch('./src/html/**/*', html).on('change', sync.reload);
-    gulp.watch('./src/css/**/*', css).on('change', sync.reload);
+    gulp.watch('./src/**/*.html', html).on('change', sync.reload);
+    gulp.watch('./src/**/*.css', css).on('change', sync.reload);
     gulp.watch('./src/img/**/*', images).on('change', sync.reload);
-    gulp.watch('./src/js/**/*', javascript).on('change', sync.reload);
+    gulp.watch('./src/**/*.js', javascript).on('change', sync.reload);
 
     done();
 }
