@@ -68,6 +68,13 @@ function fonts(done) {
     done();
 }
 
+function fontsCopy(done) {
+    gulp.src('./src/fonts/**/*')
+        .pipe(gulp.dest('./dist'));
+
+    done();
+}
+
 function imagecompress(done) {
     gulp.src('./src/img/**/*.jpg')
         .pipe(webp())
@@ -115,7 +122,7 @@ gulp.task('build', gulp.parallel(
     css,
     images,
     javascript,
-    fonts
+    fontsCopy
 ));
 
 gulp.task('compress', gulp.parallel(

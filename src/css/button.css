@@ -1,3 +1,22 @@
 .btn-rounded{
     border-radius: 8px;
 }
+
+.btn-light {
+    --bs-btn-color: var(--text-color);
+    --bs-btn-bg: var(--btn-light-color);
+    --bs-btn-border-color: var(--btn-light-color);
+    --bs-btn-hover-color: var(--active);
+    --bs-btn-hover-bg: var(--btn-light-hover);
+    --bs-btn-hover-border-color: var(--btn-light-hover);
+    --bs-btn-active-bg: var(--btn-light-click);
+    --bs-btn-active-border-color: var(--btn-light-hover);
+}
+
+.icon {
+    color: var(--text-color);
+}
+
+.me-btn-1 {
+    margin-right: 7px;
+}

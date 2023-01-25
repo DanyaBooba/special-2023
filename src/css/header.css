@@ -1,0 +1,15 @@
+.header--nav-link
+{
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 8px;
+
+    transition: .3s;
+}
+
+.header--nav-link:hover,
+.header--nav-link:focus {
+    background-color: var(--bg-light-hover);
+    color: var(--text-color);
+}
