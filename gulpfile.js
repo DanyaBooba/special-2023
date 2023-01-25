@@ -6,11 +6,9 @@ var webpHtmlNoSvg = require('gulp-webp-html-nosvg');
 var cssmin = require('gulp-cssmin');
 var concatCss = require('gulp-concat-css');
 var autoprefixer = require('gulp-autoprefixer');
-var uglify = require('gulp-uglify');
 var ttf2woff2 = require('gulp-ttf2woff2');
 var webp = require('gulp-webp');
 var imagemin = require('gulp-imagemin');
-var concat = require('gulp-concat');
 var sync = require('browser-sync').create();
 
 function html(done) {
@@ -51,8 +49,6 @@ function images(done) {
 
 function javascript(done) {
     gulp.src('./src/js/**/*.js')
-        .pipe(concat('index.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('./dist/js'));
 
     done();
