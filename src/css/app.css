@@ -1,1 +1,4 @@
-/* 123 */
+body {
+    /* color: var(--bg-color); */
+    background-image: url('/img/content/background.png');
+}
