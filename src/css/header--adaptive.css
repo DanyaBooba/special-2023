@@ -1,4 +1,17 @@
-/* .header--adaptive-nav
-{
+@media(max-width: 882px) {
+    .header--adaptive-nav {
+        display: none !important;
+    }
+}
 
-} */
+@media(min-width: 883px) {
+    .header--adaptive-more{
+        display: none !important;
+    }
+}
+
+@media(max-width: 490px) {
+    .header--adaptive-best {
+        display: none !important;
+    }
+}

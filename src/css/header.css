@@ -15,3 +15,9 @@
     border-bottom: 1px #555 solid;
     color: var(--text-color);
 }
+
+.header--best-p
+{
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
