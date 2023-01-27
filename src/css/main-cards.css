@@ -5,6 +5,10 @@
     background-position: center center;
 }
 
+.main--card:hover {
+    background-size: 105%;
+}
+
 .main--main-card-in {
     padding-left: 100px;
     padding-right: 100px;
@@ -13,6 +17,10 @@
 
 .main--main-card-out {
     padding-top: 400px;
+    border-radius: 8px;
+
+    backdrop-filter: blur(10px);
+    background: linear-gradient(-180deg, transparent, rgba(0, 0, 0, .65));
 }
 
 .main--card-link
