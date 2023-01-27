@@ -1,4 +1,16 @@
 .main--card
 {
     border-radius: 8px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main--main-card-in {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+
+.main--main-card-out {
+    padding-top: 250px;
 }

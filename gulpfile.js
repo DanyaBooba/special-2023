@@ -14,8 +14,8 @@ var sync = require('browser-sync').create();
 function html(done) {
     gulp.src('./src/html/**/*.html')
         .pipe(fileinclude())
-        .pipe(replace(/@img\//g, 'img/'))
-        .pipe(webpHtmlNoSvg())
+        // .pipe(replace(/@img\//g, 'img/'))
+        // .pipe(webpHtmlNoSvg())
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
@@ -95,7 +95,7 @@ function browser(done) {
 
     gulp.watch('./src/**/*.html', html).on('change', sync.reload);
     gulp.watch('./src/**/*.css', css).on('change', sync.reload);
-    gulp.watch('./src/img/**/*', images).on('change', sync.reload);
+    gulp.watch('./src/img/**/*', imagecompress).on('change', sync.reload);
     gulp.watch('./src/**/*.js', javascript).on('change', sync.reload);
 
     done();
@@ -106,7 +106,7 @@ gulp.task('default',
         gulp.parallel(
             html,
             css,
-            images,
+            imagecompress,
             javascript
         ),
         browser
@@ -116,7 +116,7 @@ gulp.task('default',
 gulp.task('build', gulp.parallel(
     html,
     css,
-    images,
+    imagecompress,
     javascript,
     fontsCopy
 ));
