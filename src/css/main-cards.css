@@ -19,17 +19,28 @@
     padding-top: 400px;
     border-radius: 8px;
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: brightness(0.8);
     background: linear-gradient(-180deg, transparent, rgba(0, 0, 0, .65));
+
+    transition: .3s;
 }
 
 .main--card-link
 {
     text-decoration: none;
-    color: var(--text-color);
+    color: #ccc;
     transition: .3s;
 }
 
-.main--card-link:hover {
+.main--card:hover
+.main--card-link
+{
+    color: var(--text-light);
     text-shadow: .5rem .5rem 1rem rgba(var(--bs-body-color-rgb), .35);
+}
+
+.main--main-card-out:hover
+{
+    backdrop-filter: brightness(1);
+    background: linear-gradient(-180deg, transparent, rgba(0, 0, 0, .6));
 }

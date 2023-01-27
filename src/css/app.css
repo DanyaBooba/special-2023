@@ -1,9 +1,13 @@
 body {
-    /* color: var(--bg-color); */
     background-image: var(--bg-image);
 }
 
 .icon-invert
 {
     fill: var(--active) !important;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6, p, div, span, i, b {
+    color: var(--text-color);
 }
