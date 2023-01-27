@@ -1,0 +1,9 @@
+.footer--main {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    backdrop-filter: blur(0.1rem);
+}
+
+.footer--icon {
+    margin: 5px;
+}

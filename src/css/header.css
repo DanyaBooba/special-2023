@@ -1,3 +1,8 @@
+.header--main {
+    margin-bottom: 30px;
+    backdrop-filter: blur(0.1rem);
+}
+
 .header--nav-link
 {
     text-decoration: none;
