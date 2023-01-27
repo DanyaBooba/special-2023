@@ -26,3 +26,15 @@
     padding-top: 11px;
     padding-bottom: 11px;
 }
+
+.header--nav-link-active,
+.header--nav-link-active:hover,
+.header--nav-link-active:focus
+{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+
+    border-bottom: 1px #555 solid;
+}
