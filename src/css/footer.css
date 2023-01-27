@@ -4,6 +4,13 @@
     backdrop-filter: blur(0.1rem);
 }
 
-.footer--icon {
-    margin: 5px;
+.footer-icon
+{
+    fill: var(--invert);
+    transition: .3s;
+}
+
+.footer--icon-link:hover
+.footer-icon {
+    fill: var(--text-hover);
 }
