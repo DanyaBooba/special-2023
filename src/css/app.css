@@ -1,6 +1,6 @@
 body {
     /* color: var(--bg-color); */
-    background-image: url('/img/content/background.png');
+    background-image: var(--bg-image);
 }
 
 .icon-invert

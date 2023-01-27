@@ -12,5 +12,11 @@
 }
 
 .main--main-card-out {
-    padding-top: 250px;
+    padding-top: 400px;
+}
+
+.main--card-link
+{
+    text-decoration: none;
+    color: var(--text-color);
 }

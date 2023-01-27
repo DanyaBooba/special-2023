@@ -19,5 +19,7 @@
     --bg-light: #f8f9fa;
     --bg-light-hover: #e7e9eb;
     --bs-btn-close-color: #222;
-    --bs-btn-close-white-filter--me: invert(0) grayscale(100%) brightness(200%)
+    --bs-btn-close-white-filter--me: invert(0) grayscale(100%) brightness(200%);
+
+    --bg-image: url('/img/content/bg-1.jpg');
 }
