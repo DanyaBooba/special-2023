@@ -19,4 +19,9 @@
 {
     text-decoration: none;
     color: var(--text-color);
+    transition: .3s;
+}
+
+.main--card-link:hover {
+    text-shadow: .5rem .5rem 1rem rgba(var(--bs-body-color-rgb), .35);
 }

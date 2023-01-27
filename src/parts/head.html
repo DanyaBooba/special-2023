@@ -3,12 +3,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>@@title — Creagoo</title>
-    <link rel="icon" href="/img/logo/icon.ico" type="image/x-icon">
-
-    @@if(context.themeColor != "") {
-        <meta name="theme-color" content="@@themeColor">
+    @@if(context.title != "") {
+        <title>@@title — Special</title>
     }
+
+    @@if(context.title == "") {
+        <title>Special — полезные новости в удобном формате</title>
+    }
+
+    <link rel="icon" href="/img/logo/icon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#000">
 
     <script>
         if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
