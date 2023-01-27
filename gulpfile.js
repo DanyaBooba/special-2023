@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var fileinclude = require('gulp-file-include');
-var replace = require('gulp-replace');
-var webpHtmlNoSvg = require('gulp-webp-html-nosvg');
+// var replace = require('gulp-replace');
+// var webpHtmlNoSvg = require('gulp-webp-html-nosvg');
 var cssmin = require('gulp-cssmin');
 var concatCss = require('gulp-concat-css');
 var autoprefixer = require('gulp-autoprefixer');
@@ -14,8 +14,6 @@ var sync = require('browser-sync').create();
 function html(done) {
     gulp.src('./src/html/**/*.html')
         .pipe(fileinclude())
-        // .pipe(replace(/@img\//g, 'img/'))
-        // .pipe(webpHtmlNoSvg())
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
@@ -82,7 +80,7 @@ function imagecompress(done) {
             optimizationLevel: 3
         }))
         .pipe(gulp.dest('./dist/img'))
-        .pipe(gulp.src('./src/img/**/*.{ico,svg}'))
+        .pipe(gulp.src('./src/img/**/*.{ico,svg,png}'))
         .pipe(gulp.dest('./dist/img'));
 
     done();

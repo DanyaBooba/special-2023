@@ -3,6 +3,15 @@
     border-radius: 8px;
     background-size: cover;
     background-position: center center;
+
+    margin-bottom: 30px;
+}
+
+@media(min-width: 992px) {
+    .main--card-margin {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
 }
 
 .main--card:hover {
@@ -28,14 +37,13 @@
 .main--card-link
 {
     text-decoration: none;
-    color: #ccc;
+    color: #fff;
     transition: .3s;
 }
 
 .main--card:hover
 .main--card-link
 {
-    color: var(--text-light);
     text-shadow: .5rem .5rem 1rem rgba(var(--bs-body-color-rgb), .35);
 }
 
