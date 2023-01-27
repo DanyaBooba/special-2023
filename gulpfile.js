@@ -64,7 +64,7 @@ function fonts(done) {
 
 function fontsCopy(done) {
     gulp.src('./src/fonts/**/*')
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist/fonts'));
 
     done();
 }
@@ -95,6 +95,7 @@ function browser(done) {
     gulp.watch('./src/**/*.css', css).on('change', sync.reload);
     gulp.watch('./src/img/**/*', imagecompress).on('change', sync.reload);
     gulp.watch('./src/**/*.js', javascript).on('change', sync.reload);
+    gulp.watch('./src/fonts/**/*', fontsCopy).on('change', sync.reload);
 
     done();
 }
@@ -105,7 +106,8 @@ gulp.task('default',
             html,
             css,
             imagecompress,
-            javascript
+            javascript,
+            fontsCopy
         ),
         browser
     )

@@ -1,0 +1,11 @@
+.link
+{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: .3s;
+    border-bottom: 1px var(--text-hover) solid;
+}
+
+.link:hover {
+    border-bottom: 1px var(--text-hover-1) solid;
+}

@@ -7,6 +7,10 @@ body {
     fill: var(--active) !important;
 }
 
+.icon {
+    fill: var(--invert) !important;
+}
+
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6, p, div, span, i, b {
     color: var(--text-color);

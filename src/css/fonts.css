@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Unbounded;
+    font-style: normal;
+    src: local("Directors"),
+        url("/fonts/Unbounded/Unbounded-Regular.ttf");
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Unbounded;
+}
