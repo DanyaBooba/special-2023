@@ -1,0 +1,9 @@
+.post--font-size
+{
+    font-size: 1.25rem !important;
+}
+
+.post--start-p
+{
+    color: var(--text-muted);
+}

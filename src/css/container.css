@@ -4,3 +4,9 @@
         padding-right: 130px;
     }
 }
+
+.container--post
+{
+    padding-left: 300px;
+    padding-right: 300px;
+}
