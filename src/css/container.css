@@ -1,4 +1,6 @@
-/* .container--main
-{
-    max-width: 1200px;
-} */
+@media(min-width: 1400px) {
+    .container--main {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+}
