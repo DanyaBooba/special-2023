@@ -2,9 +2,49 @@
     font-family: Unbounded;
     font-style: normal;
     src: local("Directors"),
-        url("/fonts/Unbounded/Unbounded-Regular.ttf");
+        url("/fonts/Unbounded-Regular.woff2") format("woff2");
 }
 
-h1,h2,h3,h4,h5,h6 {
+@font-face {
+    font-family: NotoSans-Regular;
+    font-style: normal;
+    src: local("Directors"),
+        url("/fonts/Noto_Sans/NotoSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: NotoSans-Bold;
+    font-style: normal;
+    src: local("Directors"),
+        url("/fonts/Noto_Sans/NotoSans-Bold.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: Unbounded;
+}
+
+p,
+div,
+nobr,
+a,
+nav,
+main,
+header,
+footer {
+    font-family: NotoSans-Regular;
+}
+
+b {
+    font-family: NotoSans-Bold;
 }
