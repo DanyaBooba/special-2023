@@ -26,4 +26,7 @@
     --bg-image: url('/img/content/bg-dark-1.jpg');
     --text-dark: #111;
     --text-light: #eee;
+
+    --nav-link-hover: #555;
+    --nav-link-active: #dedede;
 }

@@ -10,14 +10,14 @@
     padding: 0;
     margin: 0;
 
-    border-bottom: 1px #dedede solid;
+    border-bottom: 1px var(--nav-link-hover) solid;
 
     transition: .3s;
 }
 
 .header--nav-link:hover,
 .header--nav-link:focus {
-    border-bottom: 1px #555 solid;
+    border-bottom: 1px var(--nav-link-active) solid;
     color: var(--text-color);
 }
 
@@ -36,7 +36,7 @@
     padding: 0;
     margin: 0;
 
-    border-bottom: 1px #555 solid;
+    border-bottom: 1px var(--nav-link-active) solid;
 }
 
 .header--invert-bg

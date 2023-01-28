@@ -100,4 +100,8 @@
         padding-right: 100px;
         padding-bottom: 30px;
     }
+
+    .card--out-1 {
+        padding-top: 200px;
+    }
 }
