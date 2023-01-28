@@ -10,3 +10,16 @@
     padding-left: 300px;
     padding-right: 300px;
 }
+
+@media(max-width: 1400px) {
+    .container--post {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .container--post {
+        padding: 0;
+    }
+}
