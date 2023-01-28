@@ -1,6 +1,8 @@
 :root {
     --bg-color: #262323;
-    --text-color: #eee;
+    --bg-color-invert: #fff;
+    --text-color: #fff;
+    --text-color-invert: #111;
     --active: #000;
     --invert: #fff;
     --text-hover: #a9a9a9;
