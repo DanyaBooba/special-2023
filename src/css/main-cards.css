@@ -60,13 +60,12 @@
 
 .main--card-link
 {
+    border-bottom: none;
     text-decoration: none;
     color: #fff;
-    transition: .3s;
 }
 
-.main--card:hover
-.main--card-link
+.main--card-link:hover
 {
-    text-shadow: .5rem .5rem 1rem rgba(var(--bs-body-color-rgb), .35);
+    border-bottom: 1px var(--text-hover) solid;
 }

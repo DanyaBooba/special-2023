@@ -9,14 +9,14 @@
     font-family: NotoSans-Regular;
     font-style: normal;
     src: local("Directors"),
-        url("/fonts/Noto_Sans/NotoSans-Medium.ttf");
+        url("/fonts/NotoSans-Medium.woff2") format("woff2");
 }
 
 @font-face {
     font-family: NotoSans-Bold;
     font-style: normal;
     src: local("Directors"),
-        url("/fonts/Noto_Sans/NotoSans-Bold.ttf");
+        url("/fonts/NotoSans-Bold.woff2") format("woff2");
 }
 
 h1,

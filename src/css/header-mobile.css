@@ -1,0 +1,14 @@
+.header--mobile-item{
+    background-color: var(--btn-light-color);
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 15px;
+    padding-left: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.canvas-bg
+{
+    background-color: var(--bg-color);
+}

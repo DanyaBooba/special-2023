@@ -1,16 +1,16 @@
-@media(max-width: 882px) {
+@media(max-width: 1210px) {
     .header--adaptive-nav {
         display: none !important;
     }
 }
 
-@media(min-width: 883px) {
+@media(min-width: 1211px) {
     .header--adaptive-more {
         display: none !important;
     }
 }
 
-@media(max-width: 490px) {
+@media(max-width: 812px) {
     .header--adaptive-best {
         display: none !important;
     }
