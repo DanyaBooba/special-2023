@@ -69,3 +69,35 @@
 {
     border-bottom: 1px var(--text-hover) solid;
 }
+
+.card--text-size-big {
+    font-size: 2.5rem;
+}
+
+.card--text-size-normal {
+    font-size: 1.75rem;
+}
+
+.card--text-size-small {
+    font-size: 1.25rem;
+}
+
+@media(max-width: 1001px) {
+    .card--text-size-big {
+        font-size: 1.25rem;
+    }
+
+    .card--text-size-normal {
+        font-size: 1.25rem;
+    }
+
+    .card--text-size-small {
+        font-size: 1.25rem;
+    }
+
+    .card-in--1 {
+        padding-left: 45px;
+        padding-right: 100px;
+        padding-bottom: 30px;
+    }
+}
