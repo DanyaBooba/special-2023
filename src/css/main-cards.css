@@ -15,15 +15,25 @@
 }
 
 .main--card-1:hover {
-    background-size: 105%;
+    background-size: 115%;
 }
 
 .main--card-2:hover {
-    background-size: 110%;
+    background-size: 145%;
 }
 
 .main--card-3:hover {
-    background-size: 170%;
+    background-size: 215%;
+}
+
+@media(max-width: 1001px) {
+    .main--card-2:hover {
+        background-size: 115%;
+    }
+
+    .main--card-3:hover {
+        background-size: 115%;
+    }
 }
 
 .card-in--1 {
