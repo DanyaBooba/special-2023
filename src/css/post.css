@@ -10,5 +10,16 @@
 
 .post--start
 {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+.post--start-img
+{
+    margin-bottom: 30px;
+}
+
+.main--post
+{
+    margin-top: 35px;
+    padding-top: 15px;
 }

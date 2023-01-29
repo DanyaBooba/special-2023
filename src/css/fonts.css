@@ -14,9 +14,16 @@
 
 @font-face {
     font-family: NotoSans-Bold;
-    font-style: normal;
+    font-style: bold;
     src: local("Directors"),
         url("/fonts/NotoSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: NotoSans-Light;
+    font-style: italic;
+    src: local("Directors"),
+        url("/fonts/NotoSans-Light.woff2") format("woff2");
 }
 
 h1,
