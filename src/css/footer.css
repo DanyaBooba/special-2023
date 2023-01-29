@@ -27,7 +27,8 @@
 
 .footer--more-link {
     color: var(--text-hover);
-    border-bottom: 1px #d9d9d9 solid;
+    border: 0;
+    border-bottom: 1px #d9d9d9 solid !important;
 }
 
 .footer--more-link:hover {
