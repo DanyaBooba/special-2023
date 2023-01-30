@@ -11,12 +11,15 @@
     --text-hover-3: #eee;
     --text-hover-4: #ddd;
     --text-hover-5: #777;
+
     --btn-light-color: #353535;
     --btn-light-hover: #565656;
     --btn-light-click: #7B7B7B;
-    --btn-dark-color: #4a4a4a;
-    --btn-dark-hover: #7e7e7e;
-    --btn-dark-click: #212121;
+
+    --btn-dark-color: #fff;
+    --btn-dark-hover: #ddd;
+    --btn-dark-click: #aaa;
+
     --bs-border-color: #555;
     --bg-light: #353535;
     --bg-light-hover: #424242;

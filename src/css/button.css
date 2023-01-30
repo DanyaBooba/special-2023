@@ -13,6 +13,17 @@
     --bs-btn-active-border-color: var(--btn-light-hover);
 }
 
+.btn-dark {
+    --bs-btn-color: var(--text-color);
+    --bs-btn-bg: var(--btn-dark-color);
+    --bs-btn-border-color: var(--btn-dark-color);
+    --bs-btn-hover-color: var(--active);
+    --bs-btn-hover-bg: var(--btn-dark-hover);
+    --bs-btn-hover-border-color: var(--btn-dark-hover);
+    --bs-btn-active-bg: var(--btn-dark-click);
+    --bs-btn-active-border-color: var(--btn-dark-hover);
+}
+
 .icon {
     color: var(--text-color);
 }

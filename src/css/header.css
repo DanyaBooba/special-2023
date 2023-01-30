@@ -12,6 +12,7 @@
 
     border-bottom: 1px var(--nav-link-hover) solid;
 
+    transition-property: border-bottom;
     transition: .3s;
 }
 
