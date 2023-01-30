@@ -1,0 +1,9 @@
+.bg-white--adaptive
+{
+    background-color: var(--bg-color-invert);
+}
+
+.text-white--adaptive
+{
+    color: var(--text-color-invert) !important;
+}

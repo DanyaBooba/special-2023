@@ -31,6 +31,10 @@ function ChangeTheme() {
     }
 }
 
+function ChangeThemeButton() {
+    console.log('theme button');
+}
+
 if (localStorage.getItem('color-theme') === 'dark') {
     ChangeStatusDark();
 }
