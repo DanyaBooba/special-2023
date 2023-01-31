@@ -32,15 +32,50 @@ function ChangeTheme() {
 }
 
 function ChangeThemeButton() {
-    console.log('theme button');
+    if (localStorage.getItem('color-theme') === 'dark') {
+        ChangeStatusLight();
+        GetButtonLight();
+    }
+    else if (localStorage.getItem('color-theme') === 'light') {
+        ChangeStatusAuto();
+        GetButtonAuto();
+    }
+    else {
+        ChangeStatusDark();
+        GetButtonDark();
+    }
+}
+
+function GetButtonDark() {
+    let buttonsvg = document.getElementById('changethemesvg');
+    if (buttonsvg !== null) {
+        buttonsvg.href.baseVal = "/img/icons/theme.svg#dark";
+    }
+}
+
+function GetButtonAuto() {
+    let buttonsvg = document.getElementById('changethemesvg');
+    if (buttonsvg !== null) {
+        buttonsvg.href.baseVal = "/img/icons/theme.svg#auto";
+    }
+}
+
+function GetButtonLight() {
+    let buttonsvg = document.getElementById('changethemesvg');
+    if (buttonsvg !== null) {
+        buttonsvg.href.baseVal = "/img/icons/theme.svg#light";
+    }
 }
 
 if (localStorage.getItem('color-theme') === 'dark') {
     ChangeStatusDark();
+    GetButtonDark();
 }
 else if (localStorage.getItem('color-theme') === 'light') {
     ChangeStatusLight();
+    GetButtonLight();
 }
 else {
     ChangeStatusAuto();
+    GetButtonAuto();
 }
