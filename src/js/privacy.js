@@ -4,10 +4,17 @@ function CommitPrivacy() {
 }
 
 function CheckPrivacy() {
+    let block = document.getElementById('privacyblock');
     if (localStorage.getItem('privacy-block') !== 'close') {
-        let block = document.getElementById('privacyblock');
         if (block !== null) {
             block.classList.remove('d-none');
         }
     }
+    else {
+        if (block !== null) {
+            block.classList.add('d-none');
+        }
+    }
 }
+
+CheckPrivacy();
