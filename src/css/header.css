@@ -54,20 +54,26 @@
     width: 240px;
 }
 
+@media(max-width: 500px) {
+    .header--logo-margin {
+        margin-right: 20px;
+    }
+}
+
 @media(max-width: 660px) and (min-width: 540px) {
     .header--logo {
         width: 200px;
     }
 }
 
-@media(max-width: 539px) {
+@media(max-width: 539px) and (min-width: 275px) {
     .header--logo {
         width: 140px;
     }
 }
 
-@media(max-width: 500px) {
-    .header--logo-margin{
-        margin-right: 20px;
+@media(max-width: 274px) {
+    .header--logo {
+        width: 100px;
     }
 }
