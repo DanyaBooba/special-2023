@@ -1,0 +1,19 @@
+.card--text-author
+{
+    color: #ffffff !important;
+}
+
+.card--more-block
+{
+    opacity: .3;
+    transition: .3s;
+}
+
+.card-in--1:hover .card--more-block {
+    opacity: 1;
+}
+
+.card--more-type
+{
+    color: #fff !important;
+}
