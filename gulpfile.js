@@ -86,6 +86,13 @@ function imagecompress(done) {
     done();
 }
 
+function folderDownload(done) {
+    gulp.src('./src/download/**/*')
+        .pipe(gulp.dest('./dist/download'));
+
+    done();
+}
+
 function browser(done) {
     sync.init({
         server: './dist'
@@ -102,6 +109,7 @@ function browser(done) {
 
 gulp.task('default',
     gulp.series(
+        folderDownload,
         gulp.parallel(
             html,
             css,
@@ -118,7 +126,8 @@ gulp.task('build', gulp.parallel(
     css,
     imagecompress,
     javascript,
-    fontsCopy
+    fontsCopy,
+    folderDownload
 ));
 
 gulp.task('compress', gulp.parallel(
@@ -127,5 +136,6 @@ gulp.task('compress', gulp.parallel(
     imagecompress,
     fonts,
     javascript,
-    fonts
+    fonts,
+    folderDownload
 ));
