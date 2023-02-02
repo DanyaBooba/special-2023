@@ -9,3 +9,8 @@
 .card--link:hover {
     box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15) !important;
 }
+
+.card--rounded
+{
+    border-radius: 8px;
+}
