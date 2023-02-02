@@ -1,6 +1,6 @@
 .header--main {
     margin-bottom: 30px;
-    backdrop-filter: blur(0.1rem);
+    backdrop-filter: blur(0.3rem);
 }
 
 .header--nav-link

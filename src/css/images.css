@@ -4,8 +4,8 @@ img {
 
 .img--desc
 {
-    font-size: 17px;
-    color: var(--text-color);
+    font-size: 16px;
+    color: var(--text-muted);
     text-align: center;
     padding-top: 3px;
     font-family: NotoSans-Light;

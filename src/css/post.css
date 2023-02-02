@@ -23,3 +23,14 @@
     margin-top: 35px;
     padding-top: 15px;
 }
+
+.post--more
+{
+    padding-top: 50px;
+    font-size: 16px;
+}
+
+.post--more-text {
+    color: var(--text-muted);
+    font-family: NotoSans-Light;
+}

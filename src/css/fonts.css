@@ -23,7 +23,7 @@
     font-family: NotoSans-Light;
     font-style: italic;
     src: local("Directors"),
-        url("/fonts/NotoSans-Light.woff2") format("woff2");
+        url("/fonts/NotoSans-Regular.woff2") format("woff2");
 }
 
 h1,

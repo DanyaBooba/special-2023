@@ -1,7 +1,7 @@
 .footer--main {
     margin-top: 50px;
     padding-bottom: 10px;
-    backdrop-filter: blur(0.1rem);
+    backdrop-filter: blur(0.3rem);
 }
 
 .footer-icon

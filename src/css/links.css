@@ -9,3 +9,15 @@
 .link:hover {
     border-bottom: 1px var(--text-hover-1) solid;
 }
+
+.link-muted {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: .3s;
+    border-bottom: 1px var(--text-hover) solid;
+}
+
+.link-muted:hover {
+    color: var(--text-hover-1);
+    border-bottom: 1px var(--text-hover-1) solid;
+}
