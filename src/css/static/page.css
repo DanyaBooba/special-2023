@@ -1,0 +1,8 @@
+img {
+    border-radius: 8px;
+}
+
+.container--post h1, .container--post h2, .container--post h3,
+.container--post h4, .container--post h5, .container--post h6 {
+    margin-top: 50px;
+}
