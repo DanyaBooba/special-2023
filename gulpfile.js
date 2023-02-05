@@ -93,6 +93,13 @@ function folderDownload(done) {
     done();
 }
 
+function folderMore(done) {
+    gulp.src('./src/more/**/*')
+        .pipe(gulp.dest('./dist'));
+
+    done();
+}
+
 function browser(done) {
     sync.init({
         server: './dist'
@@ -103,6 +110,7 @@ function browser(done) {
     gulp.watch('./src/img/**/*', imagecompress).on('change', sync.reload);
     gulp.watch('./src/**/*.js', javascript).on('change', sync.reload);
     gulp.watch('./src/fonts/**/*', fontsCopy).on('change', sync.reload);
+    gulp.watch('./src/more/**/*', folderMore).on('change', sync.reload);
 
     done();
 }
@@ -115,7 +123,8 @@ gulp.task('default',
             css,
             imagecompress,
             javascript,
-            fontsCopy
+            fontsCopy,
+            folderMore
         ),
         browser
     )
@@ -127,7 +136,8 @@ gulp.task('build', gulp.parallel(
     imagecompress,
     javascript,
     fontsCopy,
-    folderDownload
+    folderDownload,
+    folderMore
 ));
 
 gulp.task('compress', gulp.parallel(
@@ -137,5 +147,6 @@ gulp.task('compress', gulp.parallel(
     fonts,
     javascript,
     fonts,
-    folderDownload
+    folderDownload,
+    folderMore
 ));
