@@ -1,29 +1,25 @@
 @font-face {
     font-family: Unbounded;
     font-style: normal;
-    src: local("Directors"),
-        url("/fonts/Unbounded-Regular.woff2") format("woff2");
+    src: url("/fonts/Unbounded-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-family: NotoSans-Regular;
     font-style: normal;
-    src: local("Directors"),
-        url("/fonts/NotoSans-Medium.woff2") format("woff2");
+    src: url("/fonts/NotoSans-Medium.woff2") format("woff2");
 }
 
 @font-face {
     font-family: NotoSans-Bold;
     font-style: bold;
-    src: local("Directors"),
-        url("/fonts/NotoSans-Bold.woff2") format("woff2");
+    src: url("/fonts/NotoSans-Bold.woff2") format("woff2");
 }
 
 @font-face {
     font-family: NotoSans-Light;
     font-style: italic;
-    src: local("Directors"),
-        url("/fonts/NotoSans-Regular.woff2") format("woff2");
+    src: url("/fonts/NotoSans-Regular.woff2") format("woff2");
 }
 
 h1,
