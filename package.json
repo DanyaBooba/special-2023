@@ -1,5 +1,6 @@
 {
   "name": "site",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,16 +17,10 @@
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-file-include": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-replace": "^1.1.4",
-    "gulp-ttf2woff2": "^4.0.1",
-    "gulp-uglify": "^3.0.2",
-    "gulp-webp": "^4.0.1",
-    "gulp-webp-html-nosvg": "^1.1.1"
+    "minify": "^9.2.0"
   }
 }

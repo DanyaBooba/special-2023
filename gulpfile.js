@@ -1,152 +1,87 @@
-var gulp = require('gulp');
-var htmlmin = require('gulp-htmlmin');
-var fileinclude = require('gulp-file-include');
-// var replace = require('gulp-replace');
-// var webpHtmlNoSvg = require('gulp-webp-html-nosvg');
-var cssmin = require('gulp-cssmin');
-var concatCss = require('gulp-concat-css');
-var autoprefixer = require('gulp-autoprefixer');
-var ttf2woff2 = require('gulp-ttf2woff2');
-var webp = require('gulp-webp');
-var imagemin = require('gulp-imagemin');
-var sync = require('browser-sync').create();
+import gulp from "gulp";
+import htmlmin from "gulp-htmlmin";
+import fileinclude from "gulp-file-include";
+import cssmin from "gulp-cssmin";
+import concatCss from "gulp-concat-css";
+import autoprefixer from "gulp-autoprefixer";
+import sync from "browser-sync";
+sync.create();
 
-function html(done) {
-    gulp.src('./src/html/**/*.html')
-        .pipe(fileinclude())
-        .pipe(htmlmin({
-            collapseWhitespace: true,
-            removeComments: true
-        }))
-        .pipe(gulp.dest('./dist'))
-        .pipe(gulp.src('./src/html/.htaccess'))
-        .pipe(gulp.dest('./dist'));
+// HTML
 
-    done();
-}
+export const html = () => {
+	return gulp
+		.src("src/html/**/*.html")
+		.pipe(fileinclude())
+		.pipe(
+			htmlmin({
+				collapseWhitespace: true,
+				removeComments: true,
+			})
+		)
+		.pipe(gulp.dest("dist"));
+};
 
-function css(done) {
-    gulp.src('./src/css/*.css')
-        .pipe(autoprefixer())
-        .pipe(concatCss('index.css'))
-        .pipe(cssmin())
-        .pipe(gulp.dest('./dist/css'))
-        .pipe(gulp.src('./src/css/static/**/*.css'))
-        .pipe(cssmin())
-        .pipe(gulp.dest('./dist/css'));
+// Styles
 
-    done();
-}
+export const styles = () => {
+	return gulp
+		.src("src/css/*.css")
+		.pipe(autoprefixer())
+		.pipe(concatCss("index.css"))
+		.pipe(cssmin())
+		.pipe(gulp.dest("dist/css"))
+		.pipe(gulp.src("src/css/static/**/*.css"))
+		.pipe(autoprefixer())
+		.pipe(cssmin())
+		.pipe(gulp.dest("dist/css"));
+};
 
-function images(done) {
-    gulp.src('./src/img/**/*')
-        .pipe(gulp.dest('./dist/img'));
+// JS
 
-    done();
-}
+export const javascript = () => {
+	return gulp.src("src/js/**/*.js").pipe(gulp.dest("dist/js"));
+};
 
-function javascript(done) {
-    gulp.src('./src/js/**/*.js')
-        .pipe(gulp.dest('./dist/js'));
+// Copy
 
-    done();
-}
+export const copy = () => {
+	return gulp
+		.src("src/fonts/**/*")
+		.pipe(gulp.dest("dist/fonts"))
+		.pipe(gulp.src("src/more/**/*"))
+		.pipe(gulp.dest("dist/"))
+		.pipe(gulp.src("src/img/**/*"))
+		.pipe(gulp.dest("dist/img"));
+};
 
-function fonts(done) {
-    gulp.src('./src/fonts/**/*.ttf')
-        .pipe(ttf2woff2())
-        .pipe(gulp.dest('./dist/fonts'))
-        .pipe(gulp.src('./src/fonts/**/*.{otf,woff,woff2}'))
-        .pipe(gulp.dest('./dist/fonts'));
+// Server
 
-    done();
-}
+export const server = () => {
+	sync.init({
+		ui: false,
+		notify: false,
+		server: {
+			baseDir: "dist",
+		},
+	});
+};
 
-function fontsCopy(done) {
-    gulp.src('./src/fonts/**/*')
-        .pipe(gulp.dest('./dist/fonts'));
+// Watch
 
-    done();
-}
+export const watch = () => {
+	gulp.watch("src/**/*.html", gulp.series(html));
+	gulp.watch("src/**/*.css", gulp.series(styles));
+	gulp.watch("src/**/*.js", gulp.series(javascript));
+	gulp.watch(
+		["src/more/**/*", "src/fonts/**/*", "src/img/**/*"],
+		gulp.series(copy)
+	);
+};
 
-function imagecompress(done) {
-    gulp.src('./src/img/**/*.jpg')
-        .pipe(webp())
-        .pipe(gulp.src('./src/img'))
-        .pipe(gulp.src('./src/img/**/*.jpg'))
-        .pipe(imagemin({
-            progressive: true,
-            interlaced: true,
-            optimizationLevel: 3
-        }))
-        .pipe(gulp.dest('./dist/img'))
-        .pipe(gulp.src('./src/img/**/*.{ico,svg,png}'))
-        .pipe(gulp.dest('./dist/img'));
+// Default
 
-    done();
-}
-
-function folderDownload(done) {
-    gulp.src('./src/download/**/*')
-        .pipe(gulp.dest('./dist/download'));
-
-    done();
-}
-
-function folderMore(done) {
-    gulp.src('./src/more/**/*')
-        .pipe(gulp.dest('./dist'));
-
-    done();
-}
-
-function browser(done) {
-    sync.init({
-        server: './dist'
-    });
-
-    gulp.watch('./src/**/*.html', html).on('change', sync.reload);
-    gulp.watch('./src/**/*.css', css).on('change', sync.reload);
-    gulp.watch('./src/img/**/*', imagecompress).on('change', sync.reload);
-    gulp.watch('./src/**/*.js', javascript).on('change', sync.reload);
-    gulp.watch('./src/fonts/**/*', fontsCopy).on('change', sync.reload);
-    gulp.watch('./src/more/**/*', folderMore).on('change', sync.reload);
-
-    done();
-}
-
-gulp.task('default',
-    gulp.series(
-        folderDownload,
-        gulp.parallel(
-            html,
-            css,
-            imagecompress,
-            javascript,
-            fontsCopy,
-            folderMore
-        ),
-        browser
-    )
+export default gulp.series(
+	gulp.parallel(html, styles, javascript, copy),
+	gulp.parallel(watch, server)
 );
-
-gulp.task('build', gulp.parallel(
-    html,
-    css,
-    imagecompress,
-    javascript,
-    fontsCopy,
-    folderDownload,
-    folderMore
-));
-
-gulp.task('compress', gulp.parallel(
-    html,
-    css,
-    imagecompress,
-    fonts,
-    javascript,
-    fonts,
-    folderDownload,
-    folderMore
-));
