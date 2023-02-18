@@ -6,3 +6,9 @@ img {
 .container--post h4, .container--post h5, .container--post h6 {
     margin-top: 50px;
 }
+
+.btn-post--btn
+{
+    --bs-btn-bg: var(--text-hover);
+    --bs-btn-border-color: var(--text-hover);
+}
