@@ -16,12 +16,6 @@
     src: url("/fonts/NotoSans-Bold.woff2") format("woff2");
 }
 
-@font-face {
-    font-family: NotoSans-Light;
-    font-style: italic;
-    src: url("/fonts/NotoSans-Regular.woff2") format("woff2");
-}
-
 h1,
 h2,
 h3,

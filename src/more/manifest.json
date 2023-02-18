@@ -1,11 +1,11 @@
 {
-  "name": "Special — новостной канал: удобный и красивый",
+  "name": "Special — полезные новости в удобном формате",
   "lang": "ru",
   "start_url": "/",
   "display": "browser",
   "orientation": "any",
   "background_color": "white",
-  "description": "Special — новостной канал: удобный и красивый",
+  "description": "Special — полезные новости в удобном формате",
   "icon": {
     "src": "/img/logo/ico.ico",
     "sizes": "256x256",
