@@ -12,3 +12,55 @@ img {
     --bs-btn-bg: var(--text-hover);
     --bs-btn-border-color: var(--text-hover);
 }
+
+/* Up 1 */
+.post--font-size-u1 .post--h1-font {
+    font-size: 45px;
+}
+
+.post--font-size-u1 .post--h-font {
+    font-size: 30px;
+}
+
+.post--font-size-u1 p {
+    font-size: 23px;
+}
+
+/* Up 2 */
+.post--font-size-u2 .post--h1-font {
+    font-size: 53px;
+}
+
+.post--font-size-u2 .post--h-font {
+    font-size: 35px;
+}
+
+.post--font-size-u2 p {
+    font-size: 25px;
+}
+
+/* Down 1 */
+.post--font-size-d1 .post--h1-font {
+    font-size: 35px;
+}
+
+.post--font-size-d1 .post--h-font {
+    font-size: 35px;
+}
+
+.post--font-size-d1 p {
+    font-size: 25px;
+}
+
+/* Down 2 */
+.post--font-size-d2 .post--h1-font {
+    font-size: 30px;
+}
+
+.post--font-size-d2 .post--h-font {
+    font-size: 35px;
+}
+
+.post--font-size-d2 p {
+    font-size: 25px;
+}
