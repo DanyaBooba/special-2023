@@ -10,7 +10,10 @@
     })
 
     <div class="container container--main">
-        <h1 class="display-5 fw-bold">Даниил Дыбка</h1>
+        <div class="d-flex flex-wrap mb-2">
+            <img src="/img/author/daniildybka/cap.jpg" width="64" alt="Даниил Дыбка" class="img-fluid me-3 rounded-circle">
+            <h1 class="display-5 fw-bold">Даниил Дыбка</h1>
+        </div>
         <div class="d-flex flex-wrap mb-3 align-items-center">
             <p class="mb-0">
                 <a href="/articles/" aria-label="Смотреть все статьи Спешиал" class="link">Статьи</a>
@@ -31,9 +34,9 @@
     </div>
 
     <main class="container post--font-size main--post">
+        @@include('../../../parts/p--articles.html', {
 
-
-
+        })
     </main>
 
     @@include('../../../parts/footer.html', {
