@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../parts/head.html', {
+"title": ""
+})
+<style>
+    .text--more {
+        margin-bottom: 5px;
+        font-family: Unbounded !important;
+    }
+</style>
+
+<body>
+    @@include('../parts/header.html', {
+
+    })
+
+    <main class="container">
+        <div class="border-bottom mb-5">
+            <h1>Обновления Special</h1>
+        </div>
+        <div class="fs-5 mb-5">
+            <p class="text--more fs-6">Изменения 18.02.23</p>
+            <ul>
+                <li>Добавлена категория «Обновления»</li>
+                <li>Расширенные возможности просмотра содержимого
+                    у отдельных авторов
+                </li>
+                <li>Проведены тестирования на сервере.</li>
+            </ul>
+        </div>
+        <div class="fs-5 mb-5">
+            <p class="text--more fs-6">Изменения 06.02.23</p>
+            <p>Выход в продакшен.</p>
+        </div>
+    </main>
+
+    @@include('../parts/footer.html', {
+
+    })
+</body>
+
+</html>
