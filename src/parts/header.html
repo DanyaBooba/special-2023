@@ -28,39 +28,18 @@
             </div>
 
             <ul class="nav col-12 col-md-auto fs-5 justify-content-center mb-md-0 header--adaptive-nav">
-                <!-- @@if(context.activeItem == "cabinet") {
-                    <li class="mx-2 px-3"><p class="nav-link header--nav-link-active mb-0">Кабинет</p></li>
-                }
-                @@if(context.activeItem != "cabinet") {
-                    <li class="mx-2 px-3"><a href="/aquarium/" class="nav-link header--nav-link">Кабинет</a></li>
-                }
-
-                @@if(context.activeItem == "games") {
-                    <li class="mx-2 px-3"><p class="nav-link header--nav-link-active mb-0">Игры</p></li>
-                }
-                @@if(context.activeItem != "games") {
-                    <li class="mx-2 px-3"><a href="/creagoo/" class="nav-link header--nav-link">Игры</a></li>
-                }
-
-                @@if(context.activeItem == "vr") {
-                    <li class="mx-2 px-3"><p class="nav-link header--nav-link-active mb-0">VR</p></li>
-                }
-                @@if(context.activeItem != "vr") {
-                    <li class="mx-2 px-3"><a href="/virtualreality/" class="nav-link header--nav-link">VR</a></li>
-                }
-
-                @@if(context.activeItem == "best") {
-                    <li class="mx-2 px-3"><p class="nav-link header--nav-link-active mb-0">Лучшее</p></li>
-                }
-                @@if(context.activeItem != "best") {
-                    <li class="mx-2 px-3"><a href="/best/" class="nav-link header--nav-link">Лучшее</a></li>
-                } -->
-
                 @@if(context.activeItem == "posts") {
                     <li class="mx-2 px-3"><p class="nav-link header--nav-link-active mb-0">Статьи</p></li>
                 }
                 @@if(context.activeItem != "posts") {
                     <li class="mx-2 px-3"><a href="/articles/" class="nav-link header--nav-link">Статьи</a></li>
+                }
+
+                @@if(context.activeItem == "updates") {
+                <li class="mx-2 px-3"><p class="nav-link header--nav-link-active mb-0">Обновления</p></li>
+                }
+                @@if(context.activeItem != "updates") {
+                <li class="mx-2 px-3"><a href="/updates/" class="nav-link header--nav-link">Обновления</a></li>
                 }
             </ul>
 
