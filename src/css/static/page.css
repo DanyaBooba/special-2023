@@ -45,11 +45,11 @@ img {
 }
 
 .post--font-size-d1 .post--h-font {
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .post--font-size-d1 p {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 /* Down 2 */
@@ -58,9 +58,9 @@ img {
 }
 
 .post--font-size-d2 .post--h-font {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .post--font-size-d2 p {
-    font-size: 25px;
+    font-size: 16px;
 }
