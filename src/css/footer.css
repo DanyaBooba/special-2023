@@ -48,6 +48,7 @@
     color: var(--text-hover);
     border: 0;
     border-bottom: 1px #d9d9d9 solid !important;
+    text-decoration: none;
 }
 
 .footer--more-link:hover {
@@ -58,9 +59,4 @@
 .footer--text-invert
 {
     color: var(--text-color);
-}
-
-.footer--change-theme
-{
-    background-color: var(--bg-color);
 }
