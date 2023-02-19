@@ -10,8 +10,27 @@
     transition: .3s;
 }
 
+.footer-icon-vk {
+    fill: #0077FF;
+    transition: .3s;
+}
+
+.footer-icon-tg {
+    fill: #2d9cd6;
+    transition: .3s;
+}
+
+.footer-icon-dzen {
+    fill: #282c33;
+    transition: .3s;
+}
+
 .footer--icon-link:hover
-.footer-icon {
+.footer-icon,
+.footer--icon-link:hover
+.footer-icon-tg,
+.footer--icon-link:hover .footer-icon-vk,
+.footer--icon-link:hover .footer-icon-dzen {
     fill: var(--text-hover);
 }
 
