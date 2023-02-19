@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Special — полезное медиа в удобном формате</title>
+    <link>https://news.dybka.ru</link>
+    <description>Special — полезное медиа в удобном формате</description>
+    <language>ru-ru</language>
+    <pubDate>Mon, 20 Feb 2023 12:00:00 GMT</pubDate>
+
+    <lastBuildDate>Mon, 20 Feb 2023 12:00:00 GMT</lastBuildDate>
+    <docs>https://news.dybka.ru/index.rss</docs>
+    <managingEditor>daniil@dybka.ru</managingEditor>
+    <webMaster>daniil@dybka.ru</webMaster>
+
+    <item>
+      <title>Star City</title>
+      <link>http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp</link>
+      <description>How do Americans get ready to work with Russians aboard the
+        International Space Station? They take a crash course in culture, language
+        and protocol at Russia's Star City.</description>
+      <pubDate>Tue, 03 Jun 2003 09:39:21 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
