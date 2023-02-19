@@ -14,11 +14,11 @@ img {
 }
 
 /* Up 1 */
-.post--font-size-u1 .post--h1-font {
+.post--font-size-u1 h1 {
     font-size: 45px;
 }
 
-.post--font-size-u1 .post--h-font {
+.post--font-size-u1 h3 {
     font-size: 30px;
 }
 
@@ -27,11 +27,11 @@ img {
 }
 
 /* Up 2 */
-.post--font-size-u2 .post--h1-font {
+.post--font-size-u2 h1 {
     font-size: 53px;
 }
 
-.post--font-size-u2 .post--h-font {
+.post--font-size-u2 h3 {
     font-size: 35px;
 }
 
@@ -40,11 +40,11 @@ img {
 }
 
 /* Down 1 */
-.post--font-size-d1 .post--h1-font {
+.post--font-size-d1 h1 {
     font-size: 35px;
 }
 
-.post--font-size-d1 .post--h-font {
+.post--font-size-d1 h3 {
     font-size: 28px;
 }
 
@@ -53,11 +53,11 @@ img {
 }
 
 /* Down 2 */
-.post--font-size-d2 .post--h1-font {
+.post--font-size-d2 h3 {
     font-size: 30px;
 }
 
-.post--font-size-d2 .post--h-font {
+.post--font-size-d2 h1 {
     font-size: 25px;
 }
 
