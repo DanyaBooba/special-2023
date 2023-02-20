@@ -45,14 +45,16 @@ export const javascript = () => {
 
 // Copy
 
-export const copy = () => {
-	return gulp
-		.src("src/fonts/**/*")
-		.pipe(gulp.dest("dist/fonts"))
-		.pipe(gulp.src("src/more/**/*"))
-		.pipe(gulp.dest("dist/"))
-		.pipe(gulp.src("src/img/**/*"))
-		.pipe(gulp.dest("dist/img"));
+export const copyFont = () => {
+	return gulp.src("src/fonts/**/*").pipe(gulp.dest("dist/fonts"));
+};
+
+export const copyImg = () => {
+	return gulp.src("src/img/**/*").pipe(gulp.dest("dist/img"));
+};
+
+export const copyMore = () => {
+	return gulp.src("src/more/**/*").pipe(gulp.dest("dist/"));
 };
 
 // Server
@@ -75,13 +77,13 @@ export const watch = () => {
 	gulp.watch("src/**/*.js", gulp.series(javascript));
 	gulp.watch(
 		["src/more/**/*", "src/fonts/**/*", "src/img/**/*"],
-		gulp.series(copy)
+		gulp.series(copyFont, copyImg, copyMore)
 	);
 };
 
 // Default
 
 export default gulp.series(
-	gulp.parallel(html, styles, javascript, copy),
+	gulp.parallel(html, styles, javascript, copyFont, copyImg, copyMore),
 	gulp.parallel(watch, server)
 );
