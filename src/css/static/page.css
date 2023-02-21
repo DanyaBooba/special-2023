@@ -53,14 +53,46 @@ img {
 }
 
 /* Down 2 */
-.post--font-size-d2 h3 {
+.post--font-size-d2 h1 {
     font-size: 30px;
 }
 
-.post--font-size-d2 h1 {
+.post--font-size-d2 h3 {
     font-size: 25px;
 }
 
 .post--font-size-d2 p {
     font-size: 16px;
+}
+
+@media(max-width: 994px) {
+    .post--font-size-d1 h1 {
+        font-size: 32px;
+    }
+
+    .post--font-size-u1 h1 {
+        font-size: 37px;
+    }
+
+    .post--font-size-u2 h1 {
+        font-size: 43px;
+    }
+}
+
+@media(max-width: 400px) {
+    .post--font-size-d1 h1 {
+        font-size: 25px;
+    }
+
+    .post--font-size-d2 h1 {
+        font-size: 22px;
+    }
+
+    .post--font-size-u1 h1 {
+        font-size: 30px;
+    }
+
+    .post--font-size-u2 h1 {
+        font-size: 32px;
+    }
 }

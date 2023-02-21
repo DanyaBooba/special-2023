@@ -1,5 +1,6 @@
 .footer--main {
-    margin-top: 50px;
+    margin-top: 25px;
+    padding-top: 25px;
     padding-bottom: 10px;
     backdrop-filter: blur(0.3rem);
 }
