@@ -11,7 +11,7 @@
 }
 
 @media(max-width: 812px) {
-    .header--adaptive-best {
+    .header--adaptive-button {
         display: none !important;
     }
 }
