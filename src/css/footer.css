@@ -22,7 +22,7 @@
 }
 
 .footer-icon-dzen {
-    fill: #282c33;
+    fill: var(--color-dzen);
     transition: .3s;
 }
 
