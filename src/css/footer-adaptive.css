@@ -1,0 +1,13 @@
+@media(max-width: 994px) {
+    .footer--adaptive-bottom {
+        display: block !important;
+    }
+
+    footer--adaptive-bottom-1 {
+        width: 100%;
+    }
+
+    .footer--adaptive-bottom-2{
+        width: 100%;
+    }
+}
