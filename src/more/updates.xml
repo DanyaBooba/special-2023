@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Special — полезное медиа в удобном формате</title>
+    <link>https://news.dybka.ru</link>
+    <description>Special — полезное медиа в удобном формате</description>
+    <language>ru</language>
+    <pubDate>Mon, 20 Feb 2023 12:00:00 GMT</pubDate>
+
+    <lastBuildDate>Mon, 20 Feb 2023 12:00:00 GMT</lastBuildDate>
+    <docs>https://news.dybka.ru/rss.xml</docs>
+    <managingEditor>daniil@dybka.ru</managingEditor>
+    <webMaster>daniil@dybka.ru</webMaster>
+
+    <item>
+      <title>Новый сайт creagoo.ru</title>
+      <link>https://news.dybka.ru/updates/creagoo/novyy-sayt-creagoo-ru/</link>
+      <description>С начала разработок сайтов я старался создавать все больше сайтов,
+      которыми будут пользоватьсялюди. Мне всегда была интересна данная отрасль.
+      Первые сайты, которые я разрабатывал были именно для Creagoo.</description>
+      <pubDate>Mon, 20 Feb 2023 12:00:00 GMT</pubDate>
+    </item>
+
+  </channel>
+</rss>

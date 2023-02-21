@@ -54,7 +54,11 @@ export const copyImg = () => {
 };
 
 export const copyMore = () => {
-	return gulp.src("src/more/**/*").pipe(gulp.dest("dist/"));
+	return gulp
+		.src("src/more/**/*")
+		.pipe(gulp.dest("dist/"))
+		.pipe(gulp.src("src/more/.htaccess"))
+		.pipe(gulp.dest("dist/"));
 };
 
 // Server
