@@ -1,4 +1,4 @@
-.header--mobile-item{
+.header--mobile-item {
     background-color: var(--btn-light-color);
     text-decoration: none;
     color: var(--text-color);
@@ -8,7 +8,26 @@
     margin-bottom: 20px;
 }
 
-.canvas-bg
-{
+.header--mobile-more {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.header--mobile-text {
+    text-decoration: none;
+    color: var(--text-hover);
+    padding: 5px;
+    padding-left: 25px;
+    /* margin-bottom: 5px; */
+}
+
+.canvas-bg {
     background-color: var(--bg-color);
+}
+
+.header--mobile-last-item {
+    margin-bottom: 35px;
 }
