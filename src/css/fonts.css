@@ -1,7 +1,7 @@
 @font-face {
-    font-family: Unbounded;
+    font-family: MenorahGrotesk;
     font-style: normal;
-    src: url("/fonts/Unbounded-Regular.woff2") format("woff2");
+    src: url("/fonts/MenorahGrotesk-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -28,7 +28,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: Unbounded;
+    font-family: MenorahGrotesk;
 }
 
 p,
