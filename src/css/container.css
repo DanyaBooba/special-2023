@@ -7,8 +7,8 @@
 
 .container--post
 {
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 @media(max-width: 1400px) {
@@ -22,4 +22,9 @@
     .container--post {
         padding: 0;
     }
+}
+
+.container--more-block
+{
+    margin-top: 50px;
 }

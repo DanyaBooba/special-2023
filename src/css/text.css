@@ -1,3 +1,7 @@
 .text-invert {
     color: var(--text-color-invert);
 }
+
+.text-invert-dark {
+    color: var(--text-color) !important;
+}

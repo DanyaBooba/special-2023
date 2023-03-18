@@ -3,7 +3,7 @@
 }
 
 .btn-light {
-    --bs-btn-color: var(--text-color);
+    --bs-btn-color: var(--text-invert);
     --bs-btn-bg: var(--btn-light-color);
     --bs-btn-border-color: var(--btn-light-color);
     --bs-btn-hover-color: var(--active);

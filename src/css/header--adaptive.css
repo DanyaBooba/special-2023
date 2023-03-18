@@ -2,6 +2,10 @@
     .header--adaptive-nav {
         display: none !important;
     }
+
+    .header--logo-pc {
+        display: none;
+    }
 }
 
 @media(min-width: 1343px) {
@@ -10,15 +14,9 @@
     }
 }
 
-@media(max-width: 812px) {
+@media(max-width: 864px) {
     .header--adaptive-button {
         display: none !important;
-    }
-}
-
-@media(max-width: 539px) {
-    .header--logo-pc {
-        display: none;
     }
 }
 
