@@ -9,8 +9,8 @@ img {
 
 .btn-post--btn
 {
-    --bs-btn-bg: var(--text-hover);
-    --bs-btn-border-color: var(--text-hover);
+    padding: 6px !important;
+    border-radius: 22px;
 }
 
 /* Up 1 */
