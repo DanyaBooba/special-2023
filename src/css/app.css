@@ -34,3 +34,13 @@ h6,
 .h6 {
     letter-spacing: -0.7px;
 }
+
+.card-img
+{
+    border-radius: 1rem !important;
+}
+
+.card--rounded
+{
+    border-radius: 1rem !important;
+}
