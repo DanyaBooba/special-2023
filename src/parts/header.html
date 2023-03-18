@@ -46,29 +46,29 @@
             <ul class="nav col-12 col-md-auto fs-5 justify-content-center mb-md-0 header--adaptive-nav">
                 @@if(context.activeItem == "posts") {
                 <li class="mx-2 px-3">
-                    <p class="nav-link header--nav-link-active header--article-link h3 mb-0">СТАТЬИ</p>
+                    <p class="nav-link header--nav-link-active header--article-link text-lowercase h3 mb-0">СТАТЬИ</p>
                 </li>
                 }
                 @@if(context.activeItem != "posts") {
-                <li class="mx-2 px-3"><a href="/p/" class="nav-link h3 header--article-link header--nav-link">СТАТЬИ</a></li>
+                <li class="mx-2 px-3"><a href="/p/" class="nav-link h3 header--article-link text-lowercase header--nav-link">СТАТЬИ</a></li>
                 }
 
                 @@if(context.activeItem == "updates") {
                 <li class="mx-2 px-3">
-                    <p class="nav-link header--nav-link-active h3 header--article-link mb-0">ОБНОВЛЕНИЯ</p>
+                    <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0">ОБНОВЛЕНИЯ</p>
                 </li>
                 }
                 @@if(context.activeItem != "updates") {
-                <li class="mx-2 px-3"><a href="/updates/" class="nav-link header--article-link h3 header--nav-link">ОБНОВЛЕНИЯ</a></li>
+                <li class="mx-2 px-3"><a href="/updates/" class="nav-link header--article-link h3 text-lowercase header--nav-link">ОБНОВЛЕНИЯ</a></li>
                 }
 
                 @@if(context.activeItem == "games") {
                 <li class="mx-2 px-3">
-                    <p class="nav-link header--nav-link-active h3 header--article-link mb-0">ИГРЫ</p>
+                    <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0">ИГРЫ</p>
                 </li>
                 }
                 @@if(context.activeItem != "games") {
-                <li class="mx-2 px-3"><a href="/games/" class="nav-link header--article-link h3 header--nav-link">ИГРЫ</a></li>
+                <li class="mx-2 px-3"><a href="/games/" class="nav-link header--article-link h3 text-lowercase header--nav-link">ИГРЫ</a></li>
                 }
             </ul>
 

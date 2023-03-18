@@ -1,3 +1,7 @@
+:root {
+    --bs-border-radius: 1rem !important;
+}
+
 body {
     background-image: var(--bg-image);
 }

@@ -18,6 +18,11 @@
     margin-bottom: 30px;
 }
 
+.post--start-img img {
+    margin-bottom: 5px;
+    border-radius: 1rem !important;
+}
+
 .main--post
 {
     margin-top: 35px;
