@@ -96,3 +96,7 @@ img {
         font-size: 32px;
     }
 }
+
+.button--download-game {
+    border-radius: 40px;
+}
