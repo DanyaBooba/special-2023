@@ -319,7 +319,7 @@
             </turbo:content>
         </item>
         <item turbo="true">
-            <link>https://news.dybka.ru/p/the-new-generation-of-the-iphone-xr-device/</link>
+            <link>https://news.dybka.ru/tech/the-new-generation-of-the-iphone-xr-device/</link>
             <turbo:content>
                 <![CDATA[
                     <header>
@@ -580,7 +580,7 @@
             </turbo:content>
         </item>
         <item turbo="true">
-            <link>https://news.dybka.ru/p/macbook-pro-2014-13-review/</link>
+            <link>https://news.dybka.ru/tech/macbook-pro-2014-13-review/</link>
             <turbo:content>
                 <![CDATA[
                     <header>
@@ -1180,7 +1180,7 @@
             </turbo:content>
         </item>
         <item turbo="true">
-            <link>https://news.dybka.ru/p/experience-using-iphone-6s-for-six-months/</link>
+            <link>https://news.dybka.ru/tech/experience-using-iphone-6s-for-six-months/</link>
             <turbo:content>
                 <![CDATA[
                     <header>
@@ -1199,7 +1199,7 @@
                     </header>
 
                     <p>
-                        Недавно я <a href="/p/macbook-pro-2014-13-review/" >писал</a> о покупке своего макбука в качестве устройства для программирования. Изначально у меня не было
+                        Недавно я <a href="/tech/macbook-pro-2014-13-review/" >писал</a> о покупке своего макбука в качестве устройства для программирования. Изначально у меня не было
                         желания полностью переходить на экосистему Apple, потому что думал, что мне достаточно будет одного макбука. Но как
                         оказалось позже - переход на экосистему Apple абсолютно верный шаг.
                     </p>
