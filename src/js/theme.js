@@ -47,7 +47,7 @@ function ChangeTheme() {
 	} else if (localStorage.getItem("color-theme") === "light") {
 		ChangeStatusDark();
 	} else {
-		ChangeStatusAuto();
+		ChangeStatusLight();
 	}
 }
 
@@ -60,8 +60,8 @@ function ChangeThemeButton() {
 		ChangeStatusDark();
 		GetButtonDark();
 	} else {
-		ChangeStatusAuto();
-		GetButtonAuto();
+		ChangeStatusLight();
+		ChangeStatusLight();
 	}
 }
 
