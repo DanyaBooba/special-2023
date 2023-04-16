@@ -13,12 +13,19 @@
         <div class="post--bg-image" style="background-image: url('/img/posts/p017/cap.jpg')">
 
             @@include('../../../parts/header.html', {
-
+                "newpostformat": "true"
             })
 
             <div class="post--bg-image-block">
-                <h1>Интересное название тестовой записи</h1>
-                <p class="post--start-p">Некоторое небольшое содержимое.</p>
+                <div class="post--bg-image-top">
+                    <h1>Интересное название тестовой записи</h1>
+                    <p class="post--start-p">Некоторое небольшое содержимое.</p>
+                </div>
+                <div class="post--bg-image-bottom">
+                    <div class="text-white">
+                        123
+                    </div>
+                </div>
             </div>
         </div>
 
