@@ -20,16 +20,21 @@
     padding: 0;
     margin: 0;
 
-    border-bottom: 1px var(--nav-link-hover) solid;
+    border-bottom: 2.5px var(--nav-link-hover) solid;
 
     transition-property: border-bottom;
-    transition: .3s;
+    transition: background-color .2s;
 }
 
-.header--nav-link:hover,
-.header--nav-link:focus {
-    border-bottom: 1px var(--nav-link-active) solid;
+.header--nav-link:hover {
+    border-bottom: 0px var(--nav-link-active) solid;
+    background-color: var(--link-bg-color);
     color: var(--text-color);
+}
+
+.header--nav-link:focus {
+    color: var(--text-color);
+    border-bottom: 0px var(--nav-link-active) solid;
 }
 
 .header--best-p
@@ -47,7 +52,8 @@
     padding: 0;
     margin: 0;
 
-    border-bottom: 1px var(--nav-link-active) solid;
+    border-bottom: 0px var(--nav-link-active) solid;
+    background-color: var(--link-bg-color);
 }
 
 .header--invert-bg

@@ -36,4 +36,6 @@
 
     --bs-border-color: #555 !important;
     --color-dzen: #fff;
+
+    --link-bg-color: rgba(255,255,255,.35);
 }

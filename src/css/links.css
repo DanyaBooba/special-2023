@@ -2,12 +2,18 @@
 {
     color: var(--text-color);
     text-decoration: none;
-    transition: .3s;
-    border-bottom: 1px var(--text-hover) solid;
+    transition: background-color .2s;
+    border-bottom: 2.5px var(--text-hover) solid;
+    background: none;
 }
 
 .link:hover {
-    border-bottom: 1px var(--text-hover-1) solid;
+    border-bottom: 0px var(--text-hover-1) solid;
+    background-color: var(--link-bg-color);
+}
+
+.link:focus {
+    border-bottom: 0px var(--text-hover-1) solid;
 }
 
 .link-muted {
