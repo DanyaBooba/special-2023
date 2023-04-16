@@ -1,0 +1,20 @@
+.post--bg-image {
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.post--bg-image-block
+{
+    padding: 270px 0px 230px 0px;
+    padding-left: 50px;
+    max-width: 700px;
+    background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, .85));
+}
+
+.post--bg-image-block h1 {
+    color: white;
+}
+
+.post--bg-image-block .post--start-p {
+    color:rgba(255, 255, 255, .7) !important;
+}

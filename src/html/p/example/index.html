@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../../../parts/head.html', {
+"title": "С чего я начал изучать программирование"
+})
+<link rel="stylesheet" href="/css/page.css">
+<link rel="stylesheet" href="/css/page--new.css">
+
+<body>
+
+    <main id="post--main" class="post--font-size main--post">
+
+        <div class="post--bg-image" style="background-image: url('/img/posts/p017/cap.jpg')">
+
+            @@include('../../../parts/header.html', {
+
+            })
+
+            <div class="post--bg-image-block">
+                <h1>Интересное название тестовой записи</h1>
+                <p class="post--start-p">Некоторое небольшое содержимое.</p>
+            </div>
+        </div>
+
+        <div class="container">
+
+            @@include('../../../parts/p--font-size.html', {
+
+            })
+
+            <div class="container--post">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, a?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veritatis sequi, voluptatum reiciendis
+                    aliquam quasi velit assumenda sunt repellat eaque. Nobis perspiciatis porro similique ipsam facere repudiandae
+                    dolore libero beatae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veritatis sequi, voluptatum reiciendis
+                    aliquam
+                    quasi velit assumenda sunt repellat eaque. Nobis perspiciatis porro similique ipsam facere repudiandae dolore
+                    libero
+                    beatae?</p>
+            </div>
+
+            <div class="container--post post--more">
+                <p class="post--more-text mb-0">Автор:
+                    <a href="/author/daniildybka" class="link-muted">Даниил Дыбка</a>
+                </p>
+                <p class="post--more-text mb-0">02.02.23 12:00</p>
+            </div>
+
+            @@include('../../../parts/p--more-3.html', {
+            "active": "p-how-did-i-start-learning-programming"
+            })
+        </div>
+
+    </main>
+
+    <script src="/js/post.js"></script>
+    @@include('../../../parts/footer.html', {
+
+    })
+</body>
+
+</html>

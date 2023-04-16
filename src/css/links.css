@@ -3,17 +3,23 @@
     color: var(--text-color);
     text-decoration: none;
     transition: background-color .2s;
-    border-bottom: 2.5px var(--text-hover) solid;
+    border-bottom: 0px var(--text-hover) solid;
+    text-decoration: underline;
+    text-underline-offset: .25rem;
+    text-decoration-style: solid;
+    text-decoration-color: var(--text-hover);
     background: none;
 }
 
 .link:hover {
     border-bottom: 0px var(--text-hover-1) solid;
     background-color: var(--link-bg-color);
+    text-decoration: none;
 }
 
 .link:focus {
     border-bottom: 0px var(--text-hover-1) solid;
+    text-decoration: none;
 }
 
 .link-muted {

@@ -1,26 +1,31 @@
 .nav--main {
-    padding-bottom: 15px;
+    padding-bottom: 13px;
+    padding-top: 5px;
+    /* margin-bottom: 30px; */
 }
 
 .header--backdrop {
-    backdrop-filter: blur(0.3rem);
-    margin-bottom: 30px;
+    /* backdrop-filter: blur(2rem); */
+    background-color: rgba(255,255,255, .0125) !important;
+    backdrop-filter: blur(15px);
 }
 
 .header--main {
     padding-top: 15px;
-    padding-bottom: 15px;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .header--nav-link
 {
-    text-decoration: none;
     color: var(--text-color);
     padding: 0;
     margin: 0;
 
-    border-bottom: 2.5px var(--nav-link-hover) solid;
+    border-bottom: 0px var(--nav-link-hover) solid;
+    text-decoration: underline;
+    text-underline-offset: .25rem;
+    text-decoration-style: solid;
+    text-decoration-color: var(--text-hover);
 
     transition-property: border-bottom;
     transition: background-color .2s;
@@ -28,6 +33,7 @@
 
 .header--nav-link:hover {
     border-bottom: 0px var(--nav-link-active) solid;
+    text-decoration: none;
     background-color: var(--link-bg-color);
     color: var(--text-color);
 }
