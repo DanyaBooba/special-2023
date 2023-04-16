@@ -7,6 +7,11 @@
 
 .container--post
 {
+    padding-left: 200px;
+    padding-right: 400px;
+}
+
+.container--post-head {
     padding-left: 400px;
     padding-right: 400px;
 }
@@ -16,10 +21,19 @@
         padding-left: 200px;
         padding-right: 200px;
     }
+
+    .container--post-head {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
 }
 
 @media(max-width: 1200px) {
     .container--post {
+        padding: 0;
+    }
+
+    .container--post-head {
         padding: 0;
     }
 }
