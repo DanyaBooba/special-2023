@@ -22,7 +22,30 @@
     text-decoration: none;
 }
 
-.link-muted {
+.link-white {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color .2s;
+    border-bottom: 0px #a9a9a9 solid;
+    text-decoration: underline;
+    text-underline-offset: .25rem;
+    text-decoration-style: solid;
+    text-decoration-color: #a9a9a9;
+    background: none;
+}
+
+.link-white:hover {
+    border-bottom: 0px #ccc solid;
+    background-color: rgba(255, 255, 255, .35);
+    text-decoration: none;
+}
+
+.link-white:focus {
+    border-bottom: 0px #ccc solid;
+    text-decoration: none;
+}
+
+/* .link-muted {
     color: var(--text-muted);
     text-decoration: none;
     transition: .3s;
@@ -32,4 +55,4 @@
 .link-muted:hover {
     color: var(--text-hover-1);
     border-bottom: 1px var(--text-hover-1) solid;
-}
+} */

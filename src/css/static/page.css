@@ -101,6 +101,7 @@ img {
     border-radius: 40px;
 }
 
+/* NEW */
 
 .post--bg-image {
     background-size: cover;
@@ -115,7 +116,7 @@ img {
 }
 
 .post--bg-image-top {
-    padding-bottom: 195px;
+    padding-bottom: 180px;
 }
 
 .post--bg-image-bottom {
@@ -128,4 +129,13 @@ img {
 
 .post--bg-image-block .post--start-p {
     color: rgba(255, 255, 255, .7) !important;
+}
+
+.head--static-font
+{
+    font-size: 50px !important;
+}
+
+.subhead--static-font {
+    font-size: 25px !important;
 }
