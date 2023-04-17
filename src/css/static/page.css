@@ -80,11 +80,12 @@ img {
     padding: 150px 0px 0 0px;
     padding-left: 50px;
     max-width: 700px;
-    background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, .85));
+    /* background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, 1)); */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 100%);
 }
 
 .post--bg-image-top {
-    padding-bottom: 180px;
+    padding-bottom: 140px;
 }
 
 .post--bg-image-bottom {
@@ -108,6 +109,10 @@ img {
     font-size: 25px !important;
 }
 
+.post-button-rounded {
+    border-radius: 32px;
+}
+
 /* MEDIA */
 
 @media(max-width: 994px) {
@@ -127,7 +132,8 @@ img {
         padding: 120px 0px 0 0px;
         padding-left: 50px;
         max-width: 600px;
-        background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, .85));
+        /* background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, 1)); */
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 100%);
     }
 
     .head--static-font {

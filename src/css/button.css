@@ -47,3 +47,19 @@
 .me-btn-1 {
     margin-right: 7px;
 }
+
+.btn-outline-light
+{
+    background-color: rgba(255, 255, 255, .0125) !important;
+    backdrop-filter: blur(15px);
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, .25) !important;
+    backdrop-filter: blur(15px);
+}
+
+.btn-outline-light:focus {
+    background-color: rgba(255, 255, 255, .25) !important;
+    backdrop-filter: blur(15px);
+}
