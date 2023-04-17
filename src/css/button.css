@@ -3,9 +3,25 @@
 }
 
 .btn-light {
+    /* --bs-btn-color: rgba(255, 255, 255, .5);
+    --bs-btn-bg: rgba(255, 255, 255, .5);
+    --bs-btn-border-color: rgba(255, 255, 255, .3); */
+
     --bs-btn-color: var(--text-invert);
     --bs-btn-bg: var(--btn-light-color);
     --bs-btn-border-color: var(--btn-light-color);
+    --bs-btn-hover-color: var(--active);
+    --bs-btn-hover-bg: var(--btn-light-hover);
+    --bs-btn-hover-border-color: var(--btn-light-hover);
+    --bs-btn-active-bg: var(--btn-light-click);
+    --bs-btn-active-border-color: var(--btn-light-hover);
+}
+
+.btn-light--post {
+    --bs-btn-color: rgba(255, 255, 255, .5);
+    --bs-btn-bg: rgba(255, 255, 255, .5);
+    --bs-btn-border-color: rgba(255, 255, 255, .3);
+
     --bs-btn-hover-color: var(--active);
     --bs-btn-hover-bg: var(--btn-light-hover);
     --bs-btn-hover-border-color: var(--btn-light-hover);
