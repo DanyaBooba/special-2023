@@ -1,5 +1,12 @@
 <div class="container container--post" style="margin-bottom: 30px">
-    <div class="d-flex justify-content-end align-items-center">
+
+        @@if(context.left == "true") {
+            <div class="d-flex justify-content-start align-items-center">
+        }
+        @@if(context.left != "true") {
+            <div class="d-flex justify-content-end align-items-center">
+        }
+
         <div>
             <button onClick="PostTextDown()" aria-label="Уменьшить размер шрифта на сайте"
                 class="btn btn-dark px-4 py-2 d-flex text-decoration-none btn-post--btn text-invert align-items-center">

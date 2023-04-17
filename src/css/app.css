@@ -3,7 +3,8 @@
 }
 
 body {
-    background-image: var(--bg-image);
+    /* background-image: var(--bg-image); */
+    background-color: var(--bg-color);
 }
 
 .icon-invert
