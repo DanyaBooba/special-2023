@@ -1,0 +1,34 @@
+https://yandex.ru/support/webmaster/search-appearance/news.html
+
+<?xml version="1.0" encoding="windows-1251"?>
+  <rss 
+    xmlns:yandex="http://news.yandex.ru" 
+    xmlns:media="http://search.yahoo.com/mrss/"
+    version="2.0">
+    <channel>
+      <title>Журнал русского географического общества</title>
+      <link>http://example.com/</link>
+      <description>Погода позволит наблюдать за редким явлением почти на всей Европейской части России</description>
+      <item>
+        <title>Луна закроет Солнце на 70%: где и во сколько будет видно солнечное затмение 25 октября 2022 года</title>
+        <link>http://example.com/2023/03/25/yandex.html</link>
+        <pdalink>http://www.m.example.com/2023/03/25/yandex.html</pdalink>
+        <description>Погода позволит наблюдать за редким явлением почти на всей Европейской части России</description>
+        <author>Иван Иванов</author>
+        <category>События</category>
+        <enclosure 
+          url="http://example.com/2023/03/25/yandex.jpg" 
+          type="image/jpeg"/>
+        <media:group>
+          <media:content 
+            url="http://example.com/video_example.mp4" 
+            type="video/mp4"/>
+          <media:thumbnail 
+            url="http://example.com/thumbnail.png"/> 
+        </media:group>        
+        <pubDate>Sun, 29 Sep 2023 19:59:01 +0300</pubDate>
+        <yandex:genre>message</yandex:genre>
+        <yandex:full-text>По данным астрономов, увидеть, как Луна закрывает собой Солнце, смогут жители Западной Сибири и всей Европейской части России.</yandex:full-text>
+       </item>
+     </channel>
+  </rss>

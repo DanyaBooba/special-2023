@@ -77,11 +77,14 @@ img {
 }
 
 .post--bg-image-block {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 100%);
+}
+
+.post--bg-content {
     padding: 150px 0px 0 0px;
     padding-left: 50px;
     max-width: 700px;
-    /* background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, 1)); */
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 100%);
 }
 
 .post--bg-image-top {
@@ -129,11 +132,13 @@ img {
     }
 
     .post--bg-image-block {
+        background: rgba(0,0,0, .7);
+    }
+
+    .post--bg-content {
         padding: 120px 0px 0 0px;
         padding-left: 50px;
         max-width: 600px;
-        /* background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, 1)); */
-        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 100%);
     }
 
     .head--static-font {
