@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../../../parts/head.html', {
+"title": "TITLE"
+})
+<link rel="stylesheet" href="/css/page.css">
+
+<body>
+    @@include('../../../parts/header.html', {
+
+    })
+
+    <main id="post--main" class="container main--post">
+
+        <div class="container--post post-archive--title">
+            <p class="mb-0 post--start-p p-is-archive">Запись в архиве</p>
+            <h1>TITLE</h1>
+            Выгрузка проекта Laravel на сервер
+            <p class="post--start-p">SHORT DESC</p>
+        </div>
+
+        <div class="container--post">
+
+            <p>
+                Уже год я пользуюсь техникой Apple, в том числе и ноутбуками от Apple. За это время я успел подвести топ
+                устройств лично
+                для себя, выбрать которые — невероятно выгодная покупка.
+            </p>
+
+            <p>
+                Топ не будет состоять из мнения: «Берите актуальный, не пожалеете». Мой топ состоит из устройств,
+                покупка которых не
+                будет превышать 900$.
+            </p>
+
+            <h3>Топ-3: Макбук 2015 года</h3>
+
+            <!-- wp:paragraph -->
+            <p>Всем привет. В недавной записи я сообщал об моих обновлениях и о том, что <a
+                    href="https://blog.creagoo.ru/p/995/%d0%ba%d0%b0%d0%ba-%d1%8f-%d0%bd%d0%b0%d1%87%d0%b0%d0%bb-laravel-%d0%b8%d0%b7%d1%83%d1%87%d0%b0%d1%82%d1%8c/">я
+                    начинаю изучение фреймворка Laravel</a>. В этой статье я хочу уделить время тому факту, каким образом
+                производить тестирование проекта и выгрузку его на свой сервер.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:heading -->
+            <h2>Зачем localhost?</h2>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph -->
+            <p>Лучше всего начать с того, каким образом происходит работа над проектом. Прежде чем начинать выгрузку на сервер, вы
+                работаете с проектом локально. Это значит, что все запускаемые, создаваемые и редактируемые файлы находятся только
+                на вашем устройстве. Запуская сервер - вы запускаете локальный сервер, в пути которого будет указан ваш ip или
+                localhost.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Это значит, что только вам видны изменения. Это нужно для того, чтобы спокойно работать над изменениями в проекте. В
+                то время, рабочая версия будет лежать на вашем сервере. Это значит, что вы спокойно можете добавлять нововведения,
+                имея в ходу рабочий проект на сервере, который функционирует.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Но изменения делаются для того, чтобы в будущем ими начали пользоваться. И вот он момент загрузки проекта на
+                сервер...</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:heading -->
+            <h2>Выгружаем на сервер</h2>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph -->
+            <p>1. Убедитесь, что выгружаемый проект действительно готов к загрузке. Желательно запустить его, проверить работу и
+                убедиться, что в нем нет ошибок.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>2. Настройте сервер, куда вы будете загружать проект. Либо создайте папку внутри доменного имени. Либо создайте новое
+                доменное имя на том же уровне, что и основной домен, а затем добавьте ассоциацию с этим доменом внутри настроек
+                сервера.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>3. Используйте для удобной загрузки программу, которая позволит подключиться к серверу.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>4. Отредактируйте пару моментов в проекте.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>5. Загрузите файлы на сервер.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>6. Удалите некоторые файлы с логами, чтобы сайт не выдавал ошибки.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p><strong>А теперь давайте подробнее:</strong></p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p> Мы уже готовы выгружать проект на сервер, проверили работу проекта. Давайте создадим новое доменное имя. Для этого
+                перехожу в настройки своего хостинга. Если не знаете, где они - обратитесь в поддержку провайдера.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Нам нужно создать папку и ссылку. Ссылка будет нужна для переадресации с пути www.&lt;domen&gt; на &lt;domen&gt;.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Создать папку можно в любом удобном для вас месте. Я же буду создавать прямо здесь.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:image {"id":1032,"sizeSlug":"large","linkDestination":"none"} -->
+            <figure class="wp-block-image size-large"><img
+                    src="https://blog.creagoo.ru/wp-content/uploads/2022/05/image-3-2048x1396.png" alt="" class="wp-image-1032" />
+            </figure>
+            <!-- /wp:image -->
+
+            <!-- wp:paragraph -->
+            <p>В данном каталоге "www" создаю нужные файлы.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:image {"id":1033,"sizeSlug":"large","linkDestination":"none"} -->
+            <figure class="wp-block-image size-large"><img
+                    src="https://blog.creagoo.ru/wp-content/uploads/2022/05/image-4-2048x1396.png" alt="" class="wp-image-1033" />
+            </figure>
+            <!-- /wp:image -->
+
+            <!-- wp:paragraph -->
+            <p>Далее - ссылка. В таком формате.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:image {"id":1035,"sizeSlug":"large","linkDestination":"none"} -->
+            <figure class="wp-block-image size-large"><img
+                    src="https://blog.creagoo.ru/wp-content/uploads/2022/05/image-5-2048x1396.png" alt="" class="wp-image-1035" />
+            </figure>
+            <!-- /wp:image -->
+
+            <!-- wp:paragraph -->
+            <p>Затем, создаем псевдоним. Перехожу в настройки сайта. Важно сначала создать папку и ссылку, а только затем добавлять
+                псевдоним.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:image {"id":1027,"sizeSlug":"large","linkDestination":"none"} -->
+            <figure class="wp-block-image size-large"><img
+                    src="https://blog.creagoo.ru/wp-content/uploads/2022/05/image-2048x1396.png" alt="" class="wp-image-1027" />
+            </figure>
+            <!-- /wp:image -->
+
+            <!-- wp:paragraph -->
+            <p>Здесь мы должны найти графу "псевдонимы"</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:image {"id":1030,"sizeSlug":"large","linkDestination":"none"} -->
+            <figure class="wp-block-image size-large"><img
+                    src="https://blog.creagoo.ru/wp-content/uploads/2022/05/image-2-2048x1396.png" alt="" class="wp-image-1030" />
+            </figure>
+            <!-- /wp:image -->
+
+            <!-- wp:paragraph -->
+            <p>Редактируем ее: добавляем поле с нашим новым доменным именем. В моем случае это будет <strong>id.creagoo.ru</strong>.
+                Именно так я пишу, с новой строки.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Теперь нам нужно отредактировать проект. Заходим в него. Открываем <strong>.env</strong> в корне. Редактируем эти
+                поля:</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:list -->
+            <ul>
+                <li>APP_URL: полный путь домена.</li>
+                <li>DB_PORT (если есть ДБ): 3306</li>
+                <li>DB_DATABASE (если есть ДБ): имя ДБ</li>
+                <li>DB_USERNAME (если есть ДБ): пользователь ДБ</li>
+                <li>DB_PASSWORD (если есть ДБ): пароль пользователя ДБ</li>
+            </ul>
+            <!-- /wp:list -->
+
+            <!-- wp:paragraph -->
+            <p>Далее выполняем эти команды:</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:list -->
+            <ul>
+                <li><strong>php artisan key:generate</strong>: рефрешим наш ключ.</li>
+                <li><strong>php artisan config:cache</strong>:рефрешим кэш конфига.</li>
+            </ul>
+            <!-- /wp:list -->
+
+            <!-- wp:paragraph -->
+            <p>В папке <strong>public</strong> меняем файл <strong>.htaccess</strong> на такой.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:preformatted -->
+            <pre class="wp-block-preformatted"><strong>&lt;DirectoryIndex public/index.php&gt;</strong>
+
+            &lt;IfModule mod_rewrite.c&gt;
+                &lt;IfModule mod_negotiation.c&gt;
+                    Options <strong>&lt;-MultiViews&gt;</strong> -Indexes
+                &lt;/IfModule&gt;
+
+                RewriteEngine On
+
+                # Handle Authorization Header
+                RewriteCond %{HTTP:Authorization} .
+                RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+                # Redirect Trailing Slashes If Not A Folder...
+                RewriteCond %{REQUEST_FILENAME} !-d
+                RewriteCond %{REQUEST_URI} (.+)/$
+                RewriteRule ^ %1 [L,R=301]
+
+                # Handle Front Controller...
+                RewriteCond %{REQUEST_FILENAME} !-d
+                RewriteCond %{REQUEST_FILENAME} !-f
+                RewriteRule ^ <strong>&lt;public/&gt;</strong>index.php [L]
+            &lt;/IfModule&gt;
+            </pre>
+            <!-- /wp:preformatted -->
+
+            <!-- wp:paragraph -->
+            <p><strong>&lt;..&gt;</strong> - таким выделен код, который отредактирован. <strong>-MultiViews</strong> нужно удалить,
+                если сервер некорректно отображается, тк с этим параметром с некоторыми настройками имеются проблемы.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Далее файл <strong>.htaccess</strong> нужно переместить в корень. </p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Переходим к выгрузке проекта. Открываем, к примеру, FileZilla. Подключаемся к серверу. Просто перемещаем содержимое
+                папки вашего проекта внутрь папки на сервере. </p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Есть пару моментов, про которые нельзя забыть:</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:list -->
+            <ul>
+                <li>НА СЕРВЕРЕ! Удалите содержимое папки <strong>storage/logs/*</strong></li>
+                <li>НА СЕРВЕРЕ! Удалите файл <strong>bootstrap/cache/config.php</strong></li>
+            </ul>
+            <!-- /wp:list -->
+
+            <!-- wp:paragraph -->
+            <p>Все. Ваш проект загружен на сервер. В будущем количество шагов уменьшится, потому что вы уже все настроили и все
+                стало куда проще для использования. Успехов!</p>
+            <!-- /wp:paragraph -->
+
+        </div>
+
+        <div class="container--post post--more">
+            <p class="post--more-text mb-0">Автор: Администрация
+            </p>
+            <p class="post--more-text mb-0">01.01.01 10:00</p>
+            2022-05-18 22:41:35
+        </div>
+
+    </main>
+
+    @@include('../../../parts/footer.html', {
+
+    })
+</body>
+
+</html>
