@@ -177,3 +177,18 @@ img {
         font-size: 32px;
     }
 }
+
+/* ARCHIVE */
+
+.post-archive--title
+{
+    margin-bottom: 50px;
+}
+
+.post-archive--title h1 {
+    margin-top: 0 !important;
+}
+
+.post-archive--title .p-is-archive {
+    margin-top: 50px !important;
+}
