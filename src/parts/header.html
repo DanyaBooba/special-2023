@@ -4,7 +4,7 @@
             <div class="col-md-3 mb-2 mb-md-0 header--logo-pc">
                 <div class="d-flex align-items-center">
 
-                    <div id="header__btn_back" class="header--btn-back">
+                    <div id="header__btn_back" class="header--btn-back d-none">
                         <a id="header__btn_back_link" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="link-icon" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -68,10 +68,24 @@
         </div>
 
         <!-- MOBILE -->
-        <div class="container d-flex flex-wrap align-items-center justify-content-center header--logo-mobile">
-            <div class="col-md-auto header--logo-mobile mb-2 justify-content-center mb-md-0">
-                <button data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" class="btn"
-                    aria-label="Открыть мобильное меню">
+        <div class="container d-flex flex-wrap align-items-center mb-4 justify-content-center header--logo-mobile">
+
+            <a href="/write-post.html" id="mobilebtn_addpost" class="link-icon me-auto header--mobile-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="header--mobile-button" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                </svg>
+            </a>
+
+            <a href="#" id="mobilebtn_returnback" class="link-icon me-auto d-none header--mobile-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="header--mobile-button" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg>
+            </a>
+
+            <div class="col-md-auto header--logo-mobile justify-content-center mb-md-0">
+                <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon d-block header--logo-mobile header--logo"
                         viewBox="0 0 1211.79 303.25">
                         <path
@@ -88,8 +102,18 @@
                         <path
                             d="M627.27 196.92q-17.52 0-29.86-5.43a39.27 39.27 0 0 1-21.52-21.12l-36.61 18.75c.71 1.22 1.43 2.43 2.22 3.6q11.22 16.8 30.85 26t44.56 9.26a133.84 133.84 0 0 0 38.88-5.51 109.66 109.66 0 0 0 32.22-15.43v-27.65a104.68 104.68 0 0 1-28.88 13 115.77 115.77 0 0 1-31.86 4.53ZM680.02 117.02l-30.55 15.66a45.76 45.76 0 0 1 2.36 7h-16l-53.48 27.4h109.33q0-26.4-9.5-45.91c-.67-1.44-1.39-2.8-2.16-4.15Z" />
                     </svg>
-                </button>
+                </a>
             </div>
+
+            <a data-bs-toggle="offcanvas" href="#mobileMenu" role="button" class="link-icon ms-auto header--mobile-btn"
+                aria-expanded="false" aria-controls="mobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="header--mobile-button" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+
+
         </div>
     </header>
 
@@ -148,7 +172,7 @@
     </nav>
 </div>
 
-<div class="offcanvas canvas-bg offcanvas-end" tabindex="-1" style="width: 550px; background-image: var(--bg-image);" id="mobileMenu"
+<div class="offcanvas canvas-bg offcanvas-end" tabindex="-1" style="width: 550px;" id="mobileMenu"
     aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header pt-4">
         <div class="offcanvas-title">

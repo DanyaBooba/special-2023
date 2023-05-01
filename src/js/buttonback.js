@@ -1,14 +1,19 @@
 function GetURL() {
 	let splitstr = window.location.pathname.split("/");
 
-	splitstr.pop();
-	splitstr.shift();
+	if (splitstr[0] === "") {
+		splitstr.shift();
+	}
+
+	if (splitstr[splitstr.length - 1] === "") {
+		splitstr.pop();
+	}
 
 	if (splitstr.length <= 0) {
 		return false;
 	}
 
-	if (splitstr.length == 1) {
+	if (splitstr.length === 1) {
 		return "/";
 	}
 
@@ -21,13 +26,24 @@ function GetURL() {
 
 function Main() {
 	let data = GetURL();
+	console.log(data);
+
 	let button = document.getElementById("header__btn_back");
 	let btn_link = document.getElementById("header__btn_back_link");
 
-	if (data === false) {
-		button.classList.add("d-none");
-	} else {
+	let mobileback = document.getElementById("mobilebtn_returnback");
+	let mobileaddpost = document.getElementById("mobilebtn_addpost");
+
+	if (data !== false) {
+		button.classList.remove("d-none");
 		btn_link.href = data;
+
+		mobileback.classList.remove("d-none");
+		mobileaddpost.classList.add("d-none");
+		mobileback.href = data;
+	} else {
+		mobileback.classList.add("d-none");
+		mobileaddpost.classList.remove("d-none");
 	}
 }
 

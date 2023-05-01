@@ -30,3 +30,22 @@
 .header--mobile-last-item {
     margin-bottom: 35px;
 }
+
+.header--mobile-button
+{
+    width: 48px;
+    height: 48px;
+}
+
+@media(max-width: 540px) {
+    .header--mobile-button {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media(min-width: 1029px) {
+    .header--mobile-btn{
+        display: none !important;
+    }
+}
