@@ -26,7 +26,6 @@ function GetURL() {
 
 function Main() {
 	let data = GetURL();
-	console.log(data);
 
 	let button = document.getElementById("header__btn_back");
 	let btn_link = document.getElementById("header__btn_back_link");
@@ -38,12 +37,20 @@ function Main() {
 		button.classList.remove("d-none");
 		btn_link.href = data;
 
-		mobileback.classList.remove("d-none");
-		mobileaddpost.classList.add("d-none");
-		mobileback.href = data;
+		if (mobileback !== null) {
+			mobileback.classList.remove("d-none");
+			mobileback.href = data;
+		}
+		if (mobileaddpost !== null) {
+			mobileaddpost.classList.add("d-none");
+		}
 	} else {
-		mobileback.classList.add("d-none");
-		mobileaddpost.classList.remove("d-none");
+		if (mobileback !== null) {
+			mobileback.classList.add("d-none");
+		}
+		if (mobileaddpost !== null) {
+			mobileaddpost.classList.remove("d-none");
+		}
 	}
 }
 

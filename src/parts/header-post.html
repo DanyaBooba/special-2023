@@ -6,7 +6,8 @@
 
                     <div id="header__btn_back" class="header--btn-back d-none">
                         <a id="header__btn_back_link" href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="link-icon--white" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="link-icon--white"
+                                viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                             </svg>
@@ -15,11 +16,10 @@
 
                     <div class="header--adaptive-button me-2">
                         <div class="text-invert-dark btn-rounded fs-5">
-                            <button onClick="ChangeThemeButton()" aria-label="Сменить темную и светлую тему"
-                            class="btn btn-light btn-light--post px-4 py-2 d-flex header--button
+                            <button onClick="ChangeThemeButton()" aria-label="Сменить темную и светлую тему" class="btn btn-light btn-light--post px-4 py-2 d-flex header--button
                                                     text-decoration-none text-invert-dark align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="@@color" class="me-btn-1"
-                                    viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="@@color"
+                                    class="me-btn-1" viewBox="0 0 16 16">
                                     <use id="changethemesvg" xlink:href="/img/icons/theme.svg#light"></use>
                                 </svg>
                                 <span style="color: @@color">Тема</span>
@@ -57,8 +57,8 @@
                         <div class="text-invert-dark btn-rounded fs-5">
                             <a href="/write-post.html" aria-label="Написать статью для спешиал"
                                 class="btn btn-light px-4 d-flex header--button btn-light--post text-decoration-none text-invert-dark align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="@@color" class="me-btn-1"
-                                    viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="@@color"
+                                    class="me-btn-1" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                                 </svg>
@@ -72,11 +72,27 @@
 
         <!-- MOBILE -->
         <div class="container d-flex flex-wrap align-items-center justify-content-center header--logo-mobile">
-            <div class="col-md-auto header--logo-mobile mb-2 justify-content-center mb-md-0">
-                <button data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" class="btn"
-                    aria-label="Открыть мобильное меню">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="@@color" class=" d-block header--logo-mobile header--logo"
-                        viewBox="0 0 1211.79 303.25">
+
+            <a href="/write-post.html" id="mobilebtn_addpost" class="me-auto header--mobile-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="@@color" class="header--mobile-button"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                </svg>
+            </a>
+
+            <a href="#" id="mobilebtn_returnback" class="me-auto d-none header--mobile-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="@@color" class="header--mobile-button"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg>
+            </a>
+
+            <div class="col-md-auto header--logo-mobile justify-content-center mb-md-0">
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="@@color"
+                        class="d-block header--logo-mobile header--logo" viewBox="0 0 1211.79 303.25">
                         <path
                             d="M877.07 167.05a62 62 0 0 1-13.94 31.84 76.34 76.34 0 0 1-29.5 21.48q-18 7.65-40.24 7.65-25.17 0-44.3-9.26t-29.87-26q-10.74-16.78-10.74-38.5 0-22 10.74-38.63t29.87-26.05q19.13-9.37 44.3-9.38 22.22 0 40.24 7.78a78.08 78.08 0 0 1 29.5 21.47 61.56 61.56 0 0 1 13.94 32h-41.22q-3.21-14.31-14.69-22.09t-27.77-7.78q-13.08 0-22.83 5.06a34.94 34.94 0 0 0-14.93 14.57q-5.19 9.5-5.19 23.08 0 13.32 5.19 22.83a34.86 34.86 0 0 0 14.93 14.56q9.75 5.07 22.83 5.06 16.55 0 28-8.14a34.85 34.85 0 0 0 14.44-21.48ZM919.79 67.82q-11.12 0-18.14-5.8a19 19 0 0 1-7-15.43q0-9.87 7-15.67t18.14-5.8q11.34 0 18.26 5.8t6.92 15.67q0 9.63-6.92 15.43t-18.26 5.8ZM899.3 82.39l20.49 3.94 20.73-3.94v141.93h-41.23ZM1111.08 154.22q-4 22.22-14.44 38.87a75.44 75.44 0 0 1-26.41 25.8 70.51 70.51 0 0 1-35.67 9.13q-20.49 0-36.29-9.26a63.79 63.79 0 0 1-24.56-25.91q-8.76-16.67-8.76-38.63 0-22.21 8.76-38.88a63.75 63.75 0 0 1 24.56-25.92q15.8-9.25 36.29-9.26a70.41 70.41 0 0 1 35.67 9.14 76.41 76.41 0 0 1 26.56 25.79q10.59 16.66 14.29 39.13Zm-104.42 0a45 45 0 0 0 5.07 21.72 37.4 37.4 0 0 0 13.94 14.68 39.18 39.18 0 0 0 20.49 5.31 46.79 46.79 0 0 0 21.84-5.31 59.24 59.24 0 0 0 18.15-14.68 70.51 70.51 0 0 0 12.34-21.72 72.12 72.12 0 0 0-12.34-21.85 58.68 58.68 0 0 0-18.15-14.81 46.79 46.79 0 0 0-21.84-5.31 39.18 39.18 0 0 0-20.49 5.31 37.29 37.29 0 0 0-13.94 14.81 45.73 45.73 0 0 0-5.07 21.85Zm93.56 70.1-5.93-51.34 6.67-18.76-6.67-18.54 5.93-51.83h42.7l-8.13 70.37 8.14 70.1ZM1170.57 34.25h41.22v190.07h-41.22Z" />
                         <path
@@ -91,8 +107,18 @@
                         <path
                             d="M627.27 196.92q-17.52 0-29.86-5.43a39.27 39.27 0 0 1-21.52-21.12l-36.61 18.75c.71 1.22 1.43 2.43 2.22 3.6q11.22 16.8 30.85 26t44.56 9.26a133.84 133.84 0 0 0 38.88-5.51 109.66 109.66 0 0 0 32.22-15.43v-27.65a104.68 104.68 0 0 1-28.88 13 115.77 115.77 0 0 1-31.86 4.53ZM680.02 117.02l-30.55 15.66a45.76 45.76 0 0 1 2.36 7h-16l-53.48 27.4h109.33q0-26.4-9.5-45.91c-.67-1.44-1.39-2.8-2.16-4.15Z" />
                     </svg>
-                </button>
+                </a>
             </div>
+
+            <a data-bs-toggle="offcanvas" href="#mobileMenu" role="button" class="ms-auto header--mobile-btn"
+                aria-expanded="false" aria-controls="mobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="@@color" class="header--mobile-button"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </a>
+
         </div>
     </header>
 
@@ -100,58 +126,68 @@
         <ul class="nav col-12 col-md-auto fs-5 justify-content-center mb-md-0 header--adaptive-nav">
             @@if(context.activeItem == "posts") {
             <li class="mx-2 px-3">
-                <p class="nav-link header--nav-link-active header--article-link text-lowercase h3 mb-0" style="color: @@color">СТАТЬИ</p>
+                <p class="nav-link header--nav-link-active header--article-link text-lowercase h3 mb-0"
+                    style="color: @@color">СТАТЬИ</p>
             </li>
             }
             @@if(context.activeItem != "posts") {
             <li class="mx-2 px-3"><a href="/p/"
-                    class="nav-link h3 header--article-link text-lowercase header--nav-link-white" style="color: @@color">СТАТЬИ</a></li>
+                    class="nav-link h3 header--article-link text-lowercase header--nav-link-white"
+                    style="color: @@color">СТАТЬИ</a></li>
             }
 
             @@if(context.activeItem == "updates") {
             <li class="mx-2 px-3">
-                <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0" style="color: @@color">ОБНОВЛЕНИЯ</p>
+                <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0"
+                    style="color: @@color">ОБНОВЛЕНИЯ</p>
             </li>
             }
             @@if(context.activeItem != "updates") {
             <li class="mx-2 px-3"><a href="/updates/"
-                    class="nav-link header--article-link h3 text-lowercase header--nav-link-white" style="color: @@color">ОБНОВЛЕНИЯ</a></li>
+                    class="nav-link header--article-link h3 text-lowercase header--nav-link-white"
+                    style="color: @@color">ОБНОВЛЕНИЯ</a></li>
             }
 
             @@if(context.activeItem == "games") {
             <li class="mx-2 px-3">
-                <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0" style="color: @@color">ИГРЫ</p>
+                <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0"
+                    style="color: @@color">ИГРЫ</p>
             </li>
             }
             @@if(context.activeItem != "games") {
             <li class="mx-2 px-3"><a href="/games/"
-                    class="nav-link header--article-link h3 text-lowercase header--nav-link-white" style="color: @@color">ИГРЫ</a></li>
+                    class="nav-link header--article-link h3 text-lowercase header--nav-link-white"
+                    style="color: @@color">ИГРЫ</a></li>
             }
 
             @@if(context.activeItem == "tech") {
             <li class="mx-2 px-3">
-                <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0" style="color: @@color">ТЕХНИКА</p>
+                <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0"
+                    style="color: @@color">ТЕХНИКА</p>
             </li>
             }
             @@if(context.activeItem != "tech") {
             <li class="mx-2 px-3"><a href="/tech/"
-                    class="nav-link header--article-link h3 text-lowercase header--nav-link-white" style="color: @@color">ТЕХНИКА</a></li>
+                    class="nav-link header--article-link h3 text-lowercase header--nav-link-white"
+                    style="color: @@color">ТЕХНИКА</a></li>
             }
 
             @@if(context.activeItem == "more") {
             <li class="mx-2 px-3">
-                <p class="nav-link header--nav-link-active h3 header--article-link v text-lowercase mb-0" style="color: @@color">ЕЩЕ</p>
+                <p class="nav-link header--nav-link-active h3 header--article-link v text-lowercase mb-0"
+                    style="color: @@color">ЕЩЕ</p>
             </li>
             }
             @@if(context.activeItem != "more") {
             <li class="mx-2 px-3"><a href="/more/"
-                    class="nav-link header--article-link h3 text-lowercase header--nav-link-white" style="color: @@color">ЕЩЕ</a></li>
+                    class="nav-link header--article-link h3 text-lowercase header--nav-link-white"
+                    style="color: @@color">ЕЩЕ</a></li>
             }
         </ul>
     </nav>
 </div>
 
-<div class="offcanvas canvas-bg offcanvas-end" tabindex="-1" style="width: 550px; background-image: var(--bg-image);"
+<div class="offcanvas canvas-bg offcanvas-end" tabindex="-1" style="width: 550px;"
     id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header pt-4">
         <div class="offcanvas-title">
@@ -240,10 +276,6 @@
                 class="header--mobile-item border-0 text-start fs-4">
                 Сменить тему
             </button>
-            <!-- <button onClick="ChangeBackground()" aria-label="Сменить задний фон"
-                class="header--mobile-item header--mobile-last-item border-0 text-start fs-4">
-                Сменить фон
-            </button> -->
 
             <a href="/about.html" aria-label="Открыть страницу о проекте" class="header--mobile-more fs-5">
                 О проекте
