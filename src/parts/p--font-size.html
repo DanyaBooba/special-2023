@@ -33,4 +33,12 @@
             </button>
         </div>
     </div>
+    <div class="fs-6">
+        @@if(context.left == "true") {
+            <p id="fontsizetextedit" class="ps-3 pt-1 text-start fs-6 fontsizeedit">123</p>
+        }
+        @@if(context.left != "true") {
+            <p id="fontsizetextedit" class="pe-3 pt-1 text-end fontsizeedit">123</p>
+        }
+    </div>
 </div>
