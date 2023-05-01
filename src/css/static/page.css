@@ -78,11 +78,11 @@ img {
 
 .post--bg-image-block {
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,.86) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.5) 100%);
 }
 
 .post--bg-content {
-    padding: 150px 0px 0 0px;
+    padding: 130px 0px 0 0px;
     padding-left: 50px;
     max-width: 700px;
 }
@@ -135,12 +135,6 @@ img {
         background: rgba(0,0,0, .7);
     }
 
-    .post--bg-content {
-        padding: 120px 0px 0 0px;
-        padding-left: 50px;
-        max-width: 600px;
-    }
-
     .head--static-font {
         font-size: 37px !important;
     }
@@ -157,6 +151,11 @@ img {
 @media(max-width: 450px) {
     .subhead--static-font {
         font-size: 16px !important;
+    }
+
+    .post--bg-content {
+        padding: 120px 0px 0 20px;
+        max-width: 100%;
     }
 }
 
