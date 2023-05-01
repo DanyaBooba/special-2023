@@ -132,3 +132,8 @@
     padding: 9px 33px !important;
     border-radius: 12px !important;
 }
+
+.header--btn-back
+{
+    margin-right: 15px;
+}

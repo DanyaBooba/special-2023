@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../../../../parts/head.html', {
+"title": "Creagoo Блог: новый визуал"
+})
+<link rel="stylesheet" href="/css/page.css">
+
+<body>
+    @@include('../../../../parts/header.html', {
+
+    })
+
+    <main id="post--main" class="container main--post">
+
+        <div class="container--post post-archive--title">
+            <p class="mb-0 post--start-p p-is-archive">Запись в архиве</p>
+            <h1>Creagoo Блог: новый визуал</h1>
+        </div>
+
+        <div class="container--post fs-5">
+
+            <p>Решил немного подредактировать процессы Creagoo Блога. Решил сделать более приятный интерфейс и более простой для
+                мобильных устройств.</p>
+
+            <h3>Новая логика</h3>
+
+            <p>У нас новая логика работы Creagoo Блога: здесь публикуются новости Creagoo, а на соц. сетях Creagoo мы
+                оповещаем о выходе новой новости в Creagoo Блоге.</p>
+
+            <p>Раньше это делалось стандартными средствами платформы, либо вообще не делалось. Теперь этим занимаюсь я: в соц. сети
+                я публикую маленький отрывок новости и оставляю ссылку на полную версию записи в Creagoo Блоге. Как мне кажется,
+                такой вариант будет наиболее удобным, но никто не запрещает проводить и другие "реформы" на своих платформах :)</p>
+
+        </div>
+
+        <div class="container--post post--more">
+            <p class="post--more-text mb-0">Автор: Администрация
+            </p>
+            <p class="post--more-text mb-0">05.07.2022 01:35</p>
+        </div>
+
+    </main>
+
+    @@include('../../../../parts/footer.html', {
+
+    })
+</body>
+
+</html>

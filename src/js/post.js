@@ -32,7 +32,7 @@ function SetFontSize(num) {
 	}
 
 	if (num == 2) {
-		console.log("2");
+		// console.log("2");
 		block.classList.remove("post--font-size-u1");
 		block.classList.remove("post--font-size-u2");
 		block.classList.remove("post--font-size-d1");
@@ -41,7 +41,7 @@ function SetFontSize(num) {
 
 		text.textContent = "Увеличен на 2";
 	} else if (num == 1) {
-		console.log("1");
+		// console.log("1");
 		block.classList.remove("post--font-size-u1");
 		block.classList.remove("post--font-size-u2");
 		block.classList.remove("post--font-size-d1");
@@ -50,7 +50,7 @@ function SetFontSize(num) {
 
 		text.textContent = "Увеличен на 1";
 	} else if (num == -1) {
-		console.log("-1");
+		// console.log("-1");
 		block.classList.remove("post--font-size-u1");
 		block.classList.remove("post--font-size-u2");
 		block.classList.remove("post--font-size-d1");
@@ -59,7 +59,7 @@ function SetFontSize(num) {
 
 		text.textContent = "Уменьшен на 1";
 	} else if (num == -2) {
-		console.log("-2");
+		// console.log("-2");
 		block.classList.remove("post--font-size-u1");
 		block.classList.remove("post--font-size-u2");
 		block.classList.remove("post--font-size-d1");
@@ -68,7 +68,7 @@ function SetFontSize(num) {
 
 		text.textContent = "Уменьшен на 2";
 	} else {
-		console.log("default");
+		// console.log("default");
 		block.classList.remove("post--font-size-u1");
 		block.classList.remove("post--font-size-u2");
 		block.classList.remove("post--font-size-d1");

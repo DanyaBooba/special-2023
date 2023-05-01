@@ -45,14 +45,14 @@
     text-decoration: none;
 }
 
-/* .link-muted {
-    color: var(--text-muted);
-    text-decoration: none;
+.link-icon {
+    color: var(--text-hover);
+    fill: var(--text-hover);
     transition: .3s;
-    border-bottom: 1px var(--text-hover) solid;
 }
 
-.link-muted:hover {
-    color: var(--text-hover-1);
-    border-bottom: 1px var(--text-hover-1) solid;
-} */
+.link-icon:hover,
+.link-icon:focus {
+    color: var(--text-color);
+    fill: var(--text-color);
+}
