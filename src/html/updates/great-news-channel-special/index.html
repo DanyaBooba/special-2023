@@ -43,9 +43,10 @@
                                 </a>
                             </div>
                             <div class="text-white">
-                                <a href="#" class="link-white">
+                                <a data-bs-toggle="collapse" href="#mediashare" role="button" aria-expanded="false"
+                                    aria-controls="mediashare" class="link-white">
                                     Поделиться
-                                </a>                                
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -54,6 +55,29 @@
         </div>
 
         <div class="container">
+
+            <div id="mediashare" class="mb-4 container--post collapse">
+                <div style="max-width: 400px">
+                    <h2>Поделиться статьей</h2>
+                    <div class="list-group list-group-flush">
+                        <button type="button" class="list-group-item list-group-item-action">
+                            Скопировать ссылку
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            Телеграм
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            Вконтакте
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            Почта
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            Одноклассники
+                        </button>
+                    </div>
+                </div>
+            </div>
 
             @@include('../../../parts/p--font-size.html', {
                 "left": "true"

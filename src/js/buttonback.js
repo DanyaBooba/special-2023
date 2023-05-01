@@ -12,7 +12,11 @@ function GetURL() {
 		return "/";
 	}
 
-	return "/" + splitstr[splitstr.length - 2];
+	let url = "/";
+	for (i = 0; i < splitstr.length - 1; i++) {
+		url += splitstr[i] + "/";
+	}
+	return url;
 }
 
 function Main() {
