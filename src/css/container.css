@@ -41,4 +41,8 @@
 .container--more-block
 {
     margin-top: 50px;
+    background-color: var(--bg-more-block);
+    padding: 15px;
+    border-radius: 12px;
+    padding-top: 30px;
 }

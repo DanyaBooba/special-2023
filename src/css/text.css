@@ -5,3 +5,8 @@
 .text-invert-dark {
     color: var(--text-color) !important;
 }
+
+.text-color-hover
+{
+    color: var(--text-hover) !important;
+}
