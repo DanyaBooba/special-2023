@@ -26,15 +26,6 @@
     transition: .3s;
 }
 
-.footer--icon-link:hover
-.footer-icon,
-.footer--icon-link:hover
-.footer-icon-tg,
-.footer--icon-link:hover .footer-icon-vk,
-.footer--icon-link:hover .footer-icon-dzen {
-    fill: var(--text-hover);
-}
-
 .footer--more
 {
     font-size: 13px;
@@ -55,12 +46,13 @@
 
 .footer--more-link:hover {
     color: var(--text-color);
-    border-bottom: 0px var(--text-hover-1) solid;
+    border: 0px;
     background-color: var(--link-bg-color);
 }
 
 .footer--more-link:focus {
     color: var(--text-color);
+    border: 0px;
     border-bottom: 0px var(--text-hover-1) solid;
 }
 

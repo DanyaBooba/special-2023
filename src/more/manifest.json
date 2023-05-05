@@ -7,7 +7,7 @@
   "background_color": "white",
   "description": "Медиа Special: удобный формат, актуальные записи, интересные события",
   "icon": {
-    "src": "/img/logo/ico.ico",
+    "src": "/img/logo/favicon.ico",
     "sizes": "256x256",
     "type": "image/x-icon"
   }
