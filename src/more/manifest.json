@@ -1,11 +1,11 @@
 {
-  "name": "Special — полезное медиа в удобном формате",
+  "name": "Медиа Special: удобный формат, актуальные записи, интересные события",
   "lang": "ru",
   "start_url": "/",
   "display": "browser",
   "orientation": "any",
   "background_color": "white",
-  "description": "Special — полезное медиа в удобном формате",
+  "description": "Медиа Special: удобный формат, актуальные записи, интересные события",
   "icon": {
     "src": "/img/logo/ico.ico",
     "sizes": "256x256",

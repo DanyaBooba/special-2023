@@ -4,9 +4,9 @@
      xmlns:turbo="http://turbo.yandex.ru"
      version="2.0">
     <channel>
-        <title>Special — полезное медиа в удобном формате</title>
+        <title>Медиа Special: удобный формат, актуальные записи, интересные события</title>
         <link>https://news.dybka.ru</link>
-        <description>Special — полезное медиа в удобном формате</description>
+        <description>Медиа Special: удобный формат, актуальные записи, интересные события</description>
         <language>ru</language>
         <item turbo="true">
             <link>https://news.dybka.ru/games/babkaonthehuntclassic/</link>
