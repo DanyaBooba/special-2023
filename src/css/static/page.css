@@ -191,3 +191,19 @@ img {
 .post-archive--title .p-is-archive {
     margin-top: 50px !important;
 }
+
+/* POST IMAGE */
+@media(min-width: 995px) {
+    .post--more-image {
+        display: none !important;
+    }
+}
+
+.post--more-image
+{
+    margin-bottom: 30px;
+}
+
+.post--more-image img{
+    border-radius: 12px;
+}

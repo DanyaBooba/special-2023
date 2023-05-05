@@ -1,5 +1,6 @@
 :root {
     --bg-color: #262323;
+    --bg-color-rgba: rgba(38, 35, 35, .43);
     --bg-color-invert: #fff;
     --text-color: #fff;
     --text-color-invert: #111;
@@ -39,4 +40,8 @@
 
     --link-bg-color: rgba(255,255,255,.35);
     --bg-more-block: #555;
+
+    --header-more-text: #a9a9a9;
+    --header-mobile-button-bg: rgba(56,56,56, .8);
+    --header-mobile-button-bg-2: rgba(56, 56, 56, .2);
 }
