@@ -60,3 +60,24 @@
 {
     color: var(--text-color);
 }
+
+.footer--bottom-info
+{
+    padding-top: 3px;
+    margin-bottom: 5px;
+}
+
+.footer--bottom-info p {
+    font-size: 13px;
+    color: var(--text-hover);
+    padding-left: 10px;
+}
+
+@media(max-width: 1000px) {
+    .footer--bottom-info p {
+        font-size: 13px;
+        color: var(--text-hover);
+        padding-left: 10px;
+        text-align: center;
+    }
+}
