@@ -341,10 +341,16 @@
                             Даниил Дыбка
                         </a>
                     </div>
-                    <div class="text-white">
+                    <div class="text-white me-4">
                         <a data-bs-toggle="collapse" href="#mediashare" role="button" aria-expanded="false"
                             aria-controls="mediashare" class="link-white">
                             Поделиться
+                        </a>
+                    </div>
+                    <div class="text-white">
+                        <a onClick="SetActiveImagePost()" href="#imagepost" role="button" aria-expanded="false" aria-controls="mediashare"
+                            class="link-white">
+                            Изображение
                         </a>
                     </div>
                 </div>
@@ -353,8 +359,15 @@
     </div>
 </div>
 
-<div class="post--more-image">
+<!-- <div class="post--more-image post--more-image-show" id="block_imagepost">
     <div class="container">
-        <img src="/img/@@imagepost" class="img-fluid" alt="@@alt">
+        <img src="/img/@@imagepost" class="img-fluid w-100" id="imagepost" alt="@@alt">
     </div>
+</div> -->
+
+<div class="container">
+    <figure class="post--more-image post--more-image-show text-center" id="block_imagepost">
+        <img src="/img/@@imagepost" class="img-fluid w-100" id="imagepost" alt="@@alt">
+        <figcaption class="img--desc">@@alt.</figcaption>
+    </figure>
 </div>

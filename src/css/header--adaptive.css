@@ -21,3 +21,12 @@
         display: none;
     }
 }
+
+.header--logo-pc {
+    transition: .2s;
+}
+
+.header--logo-pc:hover,
+.header--logo-pc:focus {
+    transform: scale(1.02, 1.02) rotate(-2deg);
+}

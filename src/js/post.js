@@ -82,3 +82,13 @@ let fontSize = Number(localStorage.getItem("post-font-size"));
 if (fontSize !== null) {
 	SetFontSize(fontSize);
 }
+
+function SetActiveImagePost() {
+	let image = document.getElementById("block_imagepost");
+
+	if (image.classList.contains("post--more-image-show")) {
+		image.classList.remove("post--more-image-show");
+	} else {
+		image.classList.add("post--more-image-show");
+	}
+}

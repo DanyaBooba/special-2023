@@ -203,7 +203,7 @@ img {
 
 /* POST IMAGE */
 @media(min-width: 995px) {
-    .post--more-image {
+    .post--more-image-show {
         display: none !important;
     }
 }
