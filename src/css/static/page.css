@@ -208,6 +208,12 @@ img {
     }
 }
 
+@media(max-width: 994px) {
+    .text-image-show {
+        display: none !important;
+    }
+}
+
 .post--more-image
 {
     margin-bottom: 30px;

@@ -57,3 +57,19 @@
         margin-right: 10px !important;
     }
 }
+
+@media(max-width: 400px) {
+    .card--title-1 {
+        font-size: 1rem;
+        margin-bottom: 2px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .card--title-2 {
+        font-size: 1rem;
+        margin-bottom: 2px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+}

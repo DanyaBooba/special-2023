@@ -39,9 +39,9 @@
     --color-dzen: #fff;
 
     --link-bg-color: rgba(255,255,255,.35);
-    --bg-more-block: #555;
+    --bg-more-block: #272727;
 
     --header-more-text: #a9a9a9;
     --header-mobile-button-bg: rgba(56,56,56, .8);
-    --header-mobile-button-bg-2: rgba(56, 56, 56, .2);
+    --header-mobile-button-bg-2: rgba(56, 56, 56, .4);
 }
