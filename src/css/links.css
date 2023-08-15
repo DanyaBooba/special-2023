@@ -12,12 +12,14 @@
 }
 
 .link:hover {
+    color: var(--text-color);
     border-bottom: 0px var(--text-hover-1) solid;
     background-color: var(--link-bg-color);
     text-decoration: none;
 }
 
 .link:focus {
+    color: var(--text-color);
     border-bottom: 0px var(--text-hover-1) solid;
     text-decoration: none;
 }
