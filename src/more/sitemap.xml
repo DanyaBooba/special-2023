@@ -21,22 +21,22 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://news.dybka.ru/about.html</loc>
+  <loc>https://news.dybka.ru/about/</loc>
   <lastmod>2023-03-18T23:59:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://news.dybka.ru/privacy/</loc>
+  <loc>https://news.dybka.ru/about/privacy/</loc>
   <lastmod>2023-03-18T23:59:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://news.dybka.ru/updates.html</loc>
+  <loc>https://news.dybka.ru/about/new/</loc>
   <lastmod>2023-03-18T23:59:23+00:00</lastmod>
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>https://news.dybka.ru/write-post.html</loc>
+  <loc>https://news.dybka.ru/about/post/</loc>
   <lastmod>2023-03-18T23:59:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -46,17 +46,17 @@
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>https://news.dybka.ru/privacy/policy.html</loc>
+  <loc>https://news.dybka.ru/about/privacy/policy.html</loc>
   <lastmod>2023-03-18T23:59:23+00:00</lastmod>
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>https://news.dybka.ru/privacy/cookie.html</loc>
+  <loc>https://news.dybka.ru/about/privacy/cookie.html</loc>
   <lastmod>2023-03-18T23:59:23+00:00</lastmod>
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>https://news.dybka.ru/privacy/termsofuse.html</loc>
+  <loc>https://news.dybka.ru/about/privacy/termsofuse.html</loc>
   <lastmod>2023-03-18T23:59:23+00:00</lastmod>
   <priority>0.60</priority>
 </url>

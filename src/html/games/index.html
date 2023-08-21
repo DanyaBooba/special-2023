@@ -9,26 +9,54 @@
     "activeItem": "games"
     })
 
-    <div class="container container--main">
-        <h1 class="display-5 fw-bold post-type--title">ИГРЫ</h1>
-        <div class="d-flex flex-wrap mb-3 align-items-center">
-            <p class="mb-0">
-                <a href="/p/" aria-label="Смотреть все статьи Спешиал" class="link">Статьи</a>
-            </p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="mx-2 icon" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-            </svg>
-            <p class="mb-0">Игры</p>
-        </div>
-    </div>
-
     <main>
-
-        @@include('../../parts/p--games.html', {
-
-        })
-
+        <div class="container container--main">
+            <div class="row row-cols-1 row-cols-lg-2 gx-3">
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/russiancards2/" class="card card--link card--rounded border-0">
+                        <img src="/img/posts/p020.jpg" class="card-img" alt="Шапка игры Русские Карты 2">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Русские Карты 2</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/babkaonthehuntclassic" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/g001.jpg" loading="lazy" class="card-img"
+                            alt="Мобильная игра Babka On The Hunt">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Babka On The Hunt</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/sweetness" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/g003.jpg" loading="lazy" class="card-img" alt="Мобильная игра Sweetness">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Sweetness</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/rememberthesecards" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/g002.jpg" loading="lazy" class="card-img"
+                            alt="Мобильная игра Запомни эти карты">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Запомни эти карты</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/rockpaperscissors" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/g004.jpg" loading="lazy" class="card-img"
+                            alt="Мобильная игра Камень ножницы бумага">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Камень ножницы бумага</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
     @@include('../../parts/footer.html', {

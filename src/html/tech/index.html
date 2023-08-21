@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('../../parts/head.html', {
-"title": "Обзоры техники"
+"title": "Техника"
 })
 
 <body>
@@ -9,26 +9,70 @@
     "activeItem": "tech"
     })
 
-    <div class="container container--main">
-        <h1 class="display-5 fw-bold">ТЕХНИКА</h1>
-        <div class="d-flex flex-wrap mb-3 align-items-center">
-            <p class="mb-0">
-                <a href="/p/" aria-label="Смотреть все статьи Спешиал" class="link">Статьи</a>
-            </p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="mx-2 icon" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-            </svg>
-            <p class="mb-0">Техника</p>
-        </div>
-    </div>
-
     <main>
-
-        @@include('../../parts/p--tech.html', {
-
-        })
-
+        <div class="container container--main">
+            <div class="row row-cols-1 row-cols-lg-2 gx-3">
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/macbook-2017-review" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/p013.jpg" class="card-img" alt="Макбук 2017 года с открытой крышкой">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Обзор на макбук 2017 года</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/airpods-pro-is-it-worth-the-money" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/p019.jpg" class="card-img" alt="Наушники AirPods Pro">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">AirPods Pro — стоит потратиться?
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/difference-in-macbooks-for-3-years" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/p017.jpg" class="card-img" alt="Макбук 2017 и 2014 стоят напротив">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Разница в макбуках за 3 года</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/ipad-mini-4-is-an-ambiguous-device" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/p011.jpg" class="card-img" alt="Фотография айпада мини 4">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">iPad mini 4 — неоднозначный
+                                девайс</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/the-new-generation-of-the-iphone-xr-device" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/p007.jpg" loading="lazy" class="card-img" alt="Телефон лежит на столе">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Новое поколение устройства —
+                                iPhone XR</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/macbook-pro-2014-13-review" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/p008.jpg" loading="lazy" class="card-img" alt="Приоткрытая крышка ноутбука">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Macbook Pro 2014 13' — обзор</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/experience-using-iphone-6s-for-six-months" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/p009.jpg" loading="lazy" class="card-img" alt="Телефон снимает фотографию">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Опыт использования iPhone 6s</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
     @@include('../../parts/footer.html', {

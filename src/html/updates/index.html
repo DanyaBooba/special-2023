@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('../../parts/head.html', {
-"title": "Обновления в разработках"
+"title": "Обновления"
 })
 
 <body>
@@ -9,26 +9,47 @@
     "activeItem": "updates"
     })
 
-    <div class="container container--main">
-        <h1 class="display-5 fw-bold">ОБНОВЛЕНИЯ</h1>
-        <div class="d-flex flex-wrap mb-3 align-items-center">
-            <p class="mb-0">
-                <a href="/p/" aria-label="Смотреть все статьи Спешиал" class="link">Статьи</a>
-            </p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="mx-2 icon" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-            </svg>
-            <p class="mb-0">Обновления</p>
-        </div>
-    </div>
-
     <main>
-
-        @@include('../../parts/p--updates.html', {
-
-        })
-
+        <div class="container container--main">
+            <div class="row row-cols-1 row-cols-lg-2 gx-3">
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/news-archive-share-design-update" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/update004.jpg" loading="lazy" class="card-img"
+                            alt="Главная страница медиа Special">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Архив новостей. «Поделиться».
+                                Обновление дизайна</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/great-news-channel-special" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/code01.jpg" loading="lazy" class="card-img" alt="Фотография кода">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Обновление медиа канала Special
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/change-creagoo-ru-simplify-improve-and-share" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/creagoo.jpg" loading="lazy" class="card-img" alt="Фотография логотипа Creagoo">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Упрощение, улучшение и
+                                «Поделиться»</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col pb-3 mb-sm-0">
+                    <a href="/p/novyy-sayt-creagoo-ru" class="card card--link card--rounded border-0">
+                        <img src="/img/postsmin/creagoo.jpg" loading="lazy" class="card-img" alt="Фотография логотипа Creagoo">
+                        <div class="card-img-overlay card--bg-gradient d-flex">
+                            <p class="card-title text-white mt-auto card--title card--title-2">Новый сайт creagoo.ru</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
     @@include('../../parts/footer.html', {

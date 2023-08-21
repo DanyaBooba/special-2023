@@ -4,15 +4,6 @@
             <div class="col-md-3 mb-2 mb-md-0 header--logo-pc">
                 <div class="d-flex align-items-center">
 
-                    <div id="header__btn_back" class="header--btn-back d-none">
-                        <a id="header__btn_back_link" href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="link-icon" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                            </svg>
-                        </a>
-                    </div>
-
                     <div class="header--adaptive-button me-2">
                         <div class="text-invert-dark btn-rounded fs-5">
                             <button onClick="ChangeThemeButton()" aria-label="Сменить темную и светлую тему" class="btn btn-light px-4 py-2 d-flex header--button
@@ -53,7 +44,7 @@
                 <div class="d-flex justify-content-end">
                     <div class="header--adaptive-button">
                         <div class="text-invert-dark btn-rounded fs-5">
-                            <a href="/write-post.html" aria-label="Написать статью для спешиал"
+                            <a href="/about/post/" aria-label="Написать статью для спешиал"
                                 class="btn btn-light px-4 d-flex header--button text-decoration-none text-invert-dark align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="icon me-btn-1" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -70,7 +61,7 @@
         <!-- MOBILE -->
         <div class="container d-flex flex-wrap align-items-center justify-content-center header--logo-mobile">
 
-            <a href="/write-post.html" id="mobilebtn_addpost" class="link-icon me-auto header--mobile-btn">
+            <a href="/about/post/" id="mobilebtn_addpost" class="link-icon me-auto header--mobile-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" class="header--mobile-button" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
@@ -121,12 +112,12 @@
         <ul class="nav col-12 col-md-auto fs-5 justify-content-center mb-md-0 header--adaptive-nav">
             @@if(context.activeItem == "posts") {
             <li class="mx-2 px-3">
-                <p class="nav-link header--nav-link-active header--article-link text-lowercase h3 mb-0">СТАТЬИ</p>
+                <p class="nav-link header--nav-link-active header--article-link text-lowercase h3 mb-0">НОВОСТИ</p>
             </li>
             }
             @@if(context.activeItem != "posts") {
-            <li class="mx-2 px-3"><a href="/p/"
-                    class="nav-link h3 header--article-link text-lowercase header--nav-link">СТАТЬИ</a></li>
+            <li class="mx-2 px-3"><a href="/news/"
+                    class="nav-link h3 header--article-link text-lowercase header--nav-link">НОВОСТИ</a></li>
             }
 
             @@if(context.activeItem == "updates") {
@@ -135,7 +126,7 @@
             </li>
             }
             @@if(context.activeItem != "updates") {
-            <li class="mx-2 px-3"><a href="/updates/"
+            <li class="mx-2 px-3"><a href="/p/"
                     class="nav-link header--article-link h3 text-lowercase header--nav-link">ОБНОВЛЕНИЯ</a></li>
             }
 
@@ -145,7 +136,7 @@
             </li>
             }
             @@if(context.activeItem != "games") {
-            <li class="mx-2 px-3"><a href="/games/"
+            <li class="mx-2 px-3"><a href="/p/"
                     class="nav-link header--article-link h3 text-lowercase header--nav-link">ИГРЫ</a></li>
             }
 
@@ -155,19 +146,10 @@
             </li>
             }
             @@if(context.activeItem != "tech") {
-            <li class="mx-2 px-3"><a href="/tech/"
+            <li class="mx-2 px-3"><a href="/p/"
                     class="nav-link header--article-link h3 text-lowercase header--nav-link">ТЕХНИКА</a></li>
             }
 
-            @@if(context.activeItem == "more") {
-            <li class="mx-2 px-3">
-                <p class="nav-link header--nav-link-active h3 header--article-link text-lowercase mb-0">ЕЩЕ</p>
-            </li>
-            }
-            @@if(context.activeItem != "more") {
-            <li class="mx-2 px-3"><a href="/more/"
-                    class="nav-link header--article-link h3 text-lowercase header--nav-link">ЕЩЕ</a></li>
-            }
         </ul>
     </nav>
 </div>
@@ -214,7 +196,7 @@
                     Статьи
                 </span>
             </a>
-            <a href="/updates/" aria-label="Открыть категорию Обновления" class="header--mobile-item fs-4">
+            <a href="/p/" aria-label="Открыть категорию Обновления" class="header--mobile-item fs-4">
                 <span class="d-flex flex-wrap align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="me-3"
                         viewBox="0 0 16 16">
@@ -224,7 +206,7 @@
                     Обновления
                 </span>
             </a>
-            <a href="/games/" aria-label="Открыть категорию ИГРЫ" class="header--mobile-item fs-4">
+            <a href="/p/" aria-label="Открыть категорию ИГРЫ" class="header--mobile-item fs-4">
                 <span class="d-flex flex-wrap align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="me-3"
                         viewBox="0 0 16 16">
@@ -236,7 +218,7 @@
                     Игры
                 </span>
             </a>
-            <a href="/tech/" aria-label="Открыть категорию ТЕХНИКА" class="header--mobile-item fs-4">
+            <a href="/p/" aria-label="Открыть категорию ТЕХНИКА" class="header--mobile-item fs-4">
                 <span class="d-flex flex-wrap align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="me-3"
                         viewBox="0 0 16 16">
@@ -269,13 +251,13 @@
                 </span>
             </button>
 
-            <a href="/about.html" aria-label="Открыть страницу о проекте" class="header--mobile-more fs-5">
+            <a href="/about/" aria-label="Открыть страницу о проекте" class="header--mobile-more fs-5">
                 О проекте
             </a>
-            <a href="/privacy/" aria-label="Открыть страницу для пользователя" class="header--mobile-more fs-5">
+            <a href="/about/privacy/" aria-label="Открыть страницу для пользователя" class="header--mobile-more fs-5">
                 Пользователю
             </a>
-            <a href="/updates.html" aria-label="Открыть обновления сайта" class="header--mobile-more fs-5">
+            <a href="/about/new/" aria-label="Открыть обновления сайта" class="header--mobile-more fs-5">
                 Обновления
             </a>
             <a href="/translate.html" aria-label="Открыть перевод сайта" class="header--mobile-more fs-5">
@@ -284,7 +266,7 @@
             <a href="/rss.xml" aria-label="Открыть rss статей" class="header--mobile-more fs-5">
                 RSS статей
             </a>
-            <a href="/write-post.html" aria-label="Написать статью" class="header--mobile-more fs-5">
+            <a href="/about/post/" aria-label="Написать статью" class="header--mobile-more fs-5">
                 Написать статью
             </a>
             <div aria-label="#" class="header--more-text fs-6">
